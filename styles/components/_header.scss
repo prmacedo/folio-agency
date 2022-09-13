@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 52px 32px;
+
+  &__logo {
+    height: 32px;
+    cursor: pointer;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+  }
+
+  &__icon {
+    cursor: pointer;
+    &--hamburger {
+      width: 32px;
+    }
+    &--close {
+      width: 24px;
+    }
+  }
+}
