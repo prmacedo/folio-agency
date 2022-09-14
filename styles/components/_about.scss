@@ -45,28 +45,6 @@
     }
   }
 
-  &__dropdown {
-    justify-self: end;
-
-    box-sizing: border-box;
-    width: 144px;
-    padding: 16px 24px;
-    background-color: transparent;
-
-    border: none;
-
-    display: flex;
-    justify-content: space-between;
-
-    &-icon {
-      width: 0.625rem;
-    }
-  }
-
-  &__year {
-    @include text-style("caption-2", $white);
-  }
-
   &__image {
     position: relative;
     top: 0;
