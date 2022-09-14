@@ -115,7 +115,134 @@ body {
   color: #606060;
   margin-bottom: 24px;
 }
-.hero__link {
+.hero__image {
+  position: relative;
+  top: -40px;
+  left: 40px;
+}
+
+.about {
+  background-color: #232340;
+  overflow-x: hidden;
+  padding: 64px 0;
+}
+.about__container {
+  padding: 0 32px;
+}
+.about__tag {
+  margin-bottom: 24px;
+}
+.about__tag-number {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #ADADAD;
+  margin-right: 24px;
+}
+.about__tag-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #FFFFFF;
+}
+.about__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.03125rem;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+.about__navigation {
+  display: grid;
+  grid-template-columns: 48px 48px 1fr;
+  align-items: center;
+  gap: 16px;
+}
+.about__button {
+  border: none;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+}
+.about__button--transparent {
+  background-color: transparent;
+}
+.about__button--primary {
+  background-color: #5468E7;
+}
+.about__dropdown {
+  justify-self: end;
+  box-sizing: border-box;
+  width: 144px;
+  padding: 16px 24px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+.about__dropdown-icon {
+  width: 0.625rem;
+}
+.about__year {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #FFFFFF;
+}
+.about__image {
+  position: relative;
+  top: 0;
+  left: -115px;
+  height: 424px;
+  margin: 56px 0;
+}
+.about__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.0125rem;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+.about__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: #8B8B8B;
+  margin-bottom: 32px;
+}
+.about__branding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 310px;
+  height: 310px;
+  box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.242297);
+  border-radius: 50%;
+  margin-top: 56px;
+}
+.about__branding-number {
+  color: #FFFFFF;
+  font-size: 8.75rem;
+  font-weight: 600;
+}
+.about__branding-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #FFFFFF;
+}
+
+.button {
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
@@ -126,9 +253,4 @@ body {
   padding: 1rem 2rem;
   border-radius: 8px;
   background-color: #5468E7;
-}
-.hero__image {
-  position: relative;
-  top: -40px;
-  left: 40px;
 }/*# sourceMappingURL=styles.css.map */

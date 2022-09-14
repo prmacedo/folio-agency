@@ -178,7 +178,6 @@
   }
 
   @else if $style-name == "caption-1" {
-    font-family: 'SF Pro Text';
     font-style: normal;
     font-weight: 600;
     font-size: 0.875rem;
@@ -192,7 +191,6 @@
   }
 
   @else if $style-name == "caption-2" {
-    font-family: 'SF Pro Text';
     font-style: normal;
     font-weight: 600;
     font-size: 0.75rem;
