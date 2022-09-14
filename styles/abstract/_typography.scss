@@ -1,20 +1,30 @@
-@mixin text-style($style-name, $color: $black) {
+@mixin text-style($style-name, $color: false) {
   @if $style-name == "display-1" {
     font-style: normal;
     font-weight: 700;
     font-size: 6.875rem;
     line-height: 8.1875rem;
     letter-spacing: -0.075rem;
-    color: $color;
+    @if $color == false {
+      color: $black;
+    }
+    @else {
+      color: $color;
+    }
   }
 
   @else if $style-name == "display-2" {
     font-style: normal;
     font-weight: 700;
-    font-size: 5.25rem;
-    line-height: 6.25rem;
-    letter-spacing: -0.0625rem;
-    color: $color;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.03125rem;
+    @if $color == false {
+      color: $black;
+    }
+    @else {
+      color: $color;
+    }
   }
 
   @else if $style-name == "heading-1" {
@@ -23,7 +33,12 @@
     font-size: 4.75rem;
     line-height: 5.75rem;
     letter-spacing: -0.03125rem;
-    color: $color;
+    @if $color == false {
+      color: $black;
+    }
+    @else {
+      color: $color;
+    }
   }
 
   @else if $style-name == "heading-2" {
@@ -32,7 +47,12 @@
     font-size: 4rem;
     line-height: 4.5rem;
     letter-spacing: -0.03125rem;
-    color: $color;
+    @if $color == false {
+      color: $black;
+    }
+    @else {
+      color: $color;
+    }
   }
 
   @else if $style-name == "heading-3" {
@@ -41,7 +61,12 @@
     font-size: 3rem;
     line-height: 3.5rem;
     letter-spacing: -0.03125rem;
-    color: $color;
+    @if $color == false {
+      color: $black;
+    }
+    @else {
+      color: $color;
+    }
   }
 
   @else if $style-name == "heading-4" {
@@ -50,7 +75,12 @@
     font-size: 2.5rem;
     line-height: 3rem;
     letter-spacing: -0.025rem;
-    color: $color;
+    @if $color == false {
+      color: $black;
+    }
+    @else {
+      color: $color;
+    }
   }
 
   @else if $style-name == "heading-5" {
@@ -59,7 +89,12 @@
     font-size: 2rem;
     line-height: 2.5rem;
     letter-spacing: -0.03125rem;
-    color: $color;
+    @if $color == false {
+      color: $black;
+    }
+    @else {
+      color: $color;
+    }
   }
 
   @else if $style-name == "heading-6" {
@@ -68,7 +103,12 @@
     font-size: 1.5rem;
     line-height: 2rem;
     letter-spacing: -0.0125rem;
-    color: $color;
+    @if $color == false {
+      color: $black;
+    }
+    @else {
+      color: $color;
+    }
   }
 
   @else if $style-name == "title" {
@@ -77,7 +117,12 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
     letter-spacing: -0.011363625rem;
-    color: $color;
+    @if $color == false {
+      color: $black;
+    }
+    @else {
+      color: $color;
+    }
   }
 
   @else if $style-name == "body-1" {
@@ -85,7 +130,12 @@
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 2rem;
-    color: $text-light-mode;
+    @if $color == false {
+      color: $text-light-mode;
+    }
+    @else {
+      color: $color;
+    }
   }
 
   @else if $style-name == "body-2" {
@@ -93,15 +143,25 @@
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.75rem;
-    color: $text-light-mode;
+    @if $color == false {
+      color: $text-light-mode;
+    }
+    @else {
+      color: $color;
+    }
   }
 
   @else if $style-name == "button" {
     font-style: normal;
     font-weight: 700;
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-    color: $color;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    @if $color == false {
+      color: $black;
+    }
+    @else {
+      color: $color;
+    }
   }
 
   @else if $style-name == "menu-item" {
@@ -109,7 +169,12 @@
     font-weight: 600;
     font-size: 1.125rem;
     line-height: 1.5rem;
-    color: $color;
+    @if $color == false {
+      color: $black;
+    }
+    @else {
+      color: $color;
+    }
   }
 
   @else if $style-name == "caption-1" {
@@ -118,7 +183,12 @@
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 1.125rem;
-    color: $text-light-mode;
+    @if $color == false {
+      color: $text-light-mode;
+    }
+    @else {
+      color: $color;
+    }
   }
 
   @else if $style-name == "caption-2" {
@@ -127,6 +197,11 @@
     font-weight: 600;
     font-size: 0.75rem;
     line-height: 1rem;
-    color: $text-light-mode;
+    @if $color == false {
+      color: $text-light-mode;
+    }
+    @else {
+      color: $color;
+    }
   }
 }

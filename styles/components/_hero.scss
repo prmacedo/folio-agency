@@ -1,0 +1,35 @@
+.hero {
+  background-image: url(../../imgs/line.svg);
+  background-repeat: no-repeat;
+  background-position-x: 176px;
+  overflow-x: hidden;
+
+  &__container {
+    padding: 0 32px
+  }
+
+  &__title {
+    @include text-style("display-2", $dark);
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    @include text-style("body-2");
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    @include text-style("button", $white);
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    background-color: $primary;
+  }
+
+  &__image {
+    position: relative;
+    top: -40px;
+    left: 40px;
+  }
+}

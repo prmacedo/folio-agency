@@ -18,50 +18,62 @@
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-  <header class="header">
-    <a href="./" class="header__link">
-      <img src="./imgs/logo-light-mode.svg" alt="Logo Folio Agency" class="header__logo">
-    </a>
-    <button type="button" class="header__button js-toggle-menu-button">
-      <img src="./imgs/menu.svg" alt="Menu icon" class="header__icon header__icon--hamburger">
-    </button>
-  </header>
-
-  <nav class="menu js-menu">
+  <section class="hero">
     <header class="header">
       <a href="./" class="header__link">
-        <img src="./imgs/logo-dark-mode.svg" alt="Logo Folio Agency Dark Mode" class="header__logo">
+        <img src="./imgs/logo-light-mode.svg" alt="Logo Folio Agency" class="header__logo">
       </a>
       <button type="button" class="header__button js-toggle-menu-button">
-        <img src="./imgs/close.svg" alt="Close menu" class="header__icon header__icon--close">
+        <img src="./imgs/menu.svg" alt="Menu icon" class="header__icon header__icon--hamburger">
       </button>
     </header>
 
-    <ul class="menu__list">
-      <li class="menu__item"><a href="#" class="menu__link menu__link--active">Work</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">About</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Jobs</a></li>
-    </ul>
+    <nav class="menu js-menu">
+      <header class="header">
+        <a href="./" class="header__link">
+          <img src="./imgs/logo-dark-mode.svg" alt="Logo Folio Agency Dark Mode" class="header__logo">
+        </a>
+        <button type="button" class="header__button js-toggle-menu-button">
+          <img src="./imgs/close.svg" alt="Close menu" class="header__icon header__icon--close">
+        </button>
+      </header>
 
-    <ul class="menu__social-media-list">
-      <li class="menu__social-media-item menu__social-media--facebook">
-        <a href="https://pt-br.facebook.com/" class="menu__social-media-link">
-          <img src="./imgs/facebook.svg" alt="Facebook" class="menu_social-media-link">
-        </a>
-      </li>
-      <li class="menu__social-media-item menu__social-media--youtube">
-        <a href="https://www.youtube.com/" class="menu__social-media-link">
-          <img src="./imgs/youtube.svg" alt="Youtube" class="menu_social-media-link">
-        </a>
-      </li>
-      <li class="menu__social-media-item menu__social-media--instagram">
-        <a href="https://www.instagram.com/" class="menu__social-media-link">
-          <img src="./imgs/instagram.svg" alt="Instagram" class="menu_social-media-link">
-        </a>
-      </li>
-    </ul>
-  </nav>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#" class="menu__link menu__link--active">Work</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Jobs</a></li>
+      </ul>
+
+      <ul class="menu__social-media-list">
+        <li class="menu__social-media-item menu__social-media--facebook">
+          <a href="https://pt-br.facebook.com/" class="menu__social-media-link">
+            <img src="./imgs/facebook.svg" alt="Facebook" class="menu_social-media-link">
+          </a>
+        </li>
+        <li class="menu__social-media-item menu__social-media--youtube">
+          <a href="https://www.youtube.com/" class="menu__social-media-link">
+            <img src="./imgs/youtube.svg" alt="Youtube" class="menu_social-media-link">
+          </a>
+        </li>
+        <li class="menu__social-media-item menu__social-media--instagram">
+          <a href="https://www.instagram.com/" class="menu__social-media-link">
+            <img src="./imgs/instagram.svg" alt="Instagram" class="menu_social-media-link">
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="hero__container">
+      <h1 class="hero__title">Stand Out from The Crowd.</h1>
+
+      <p class="hero__text">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
+
+      <a href="#" class="hero__link">Recent Work</a>
+    </div>
+
+    <img src="./imgs/hero-graphic.svg" alt="Hero Graphic" class="hero__image">
+  </section>
 
   <script src="./js/index.js"></script>
 </body>
