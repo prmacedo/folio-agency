@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <title>Folio Agency</title>
+  <title>Folio Agency | Who We Are</title>
   <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon">
 
   <!-- Styles -->
@@ -18,62 +18,51 @@
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-  <section class="hero">
+  <header class="header">
+    <a href="./" class="header__link">
+      <img src="./imgs/logo-light-mode.svg" alt="Logo Folio Agency" class="header__logo">
+    </a>
+    <button type="button" class="header__button js-toggle-menu-button">
+      <img src="./imgs/menu.svg" alt="Menu icon" class="header__icon header__icon--hamburger">
+    </button>
+  </header>
+
+  <nav class="menu js-menu">
     <header class="header">
       <a href="./" class="header__link">
-        <img src="./imgs/logo-light-mode.svg" alt="Logo Folio Agency" class="header__logo">
+        <img src="./imgs/logo-dark-mode.svg" alt="Logo Folio Agency Dark Mode" class="header__logo">
       </a>
       <button type="button" class="header__button js-toggle-menu-button">
-        <img src="./imgs/menu.svg" alt="Menu icon" class="header__icon header__icon--hamburger">
+        <img src="./imgs/close.svg" alt="Close menu" class="header__icon header__icon--close">
       </button>
     </header>
 
-    <nav class="menu js-menu">
-      <header class="header">
-        <a href="./" class="header__link">
-          <img src="./imgs/logo-dark-mode.svg" alt="Logo Folio Agency Dark Mode" class="header__logo">
+    <ul class="menu__list">
+      <li class="menu__item"><a href="#" class="menu__link">Work</a></li>
+      <li class="menu__item"><a href="./about.html" class="menu__link menu__link--active">About</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Jobs</a></li>
+    </ul>
+
+    <ul class="social-media social-media--menu">
+      <li class="social-media__item social-media__item--menu social-media--facebook">
+        <a href="https://pt-br.facebook.com/" class="social-media__link">
+          <img src="./imgs/facebook.svg" alt="Facebook" class="social-media__image">
         </a>
-        <button type="button" class="header__button js-toggle-menu-button">
-          <img src="./imgs/close.svg" alt="Close menu" class="header__icon header__icon--close">
-        </button>
-      </header>
+      </li>
+      <li class="social-media__item social-media__item--menu social-media--youtube">
+        <a href="https://www.youtube.com/" class="social-media__link">
+          <img src="./imgs/youtube.svg" alt="Youtube" class="social-media__image">
+        </a>
+      </li>
+      <li class="social-media__item social-media__item--menu social-media--instagram">
+        <a href="https://www.instagram.com/" class="social-media__link">
+          <img src="./imgs/instagram.svg" alt="Instagram" class="social-media__image">
+        </a>
+      </li>
+    </ul>
+  </nav>
 
-      <ul class="menu__list">
-        <li class="menu__item"><a href="#" class="menu__link menu__link--active">Work</a></li>
-        <li class="menu__item"><a href="./about.html" class="menu__link">About</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">Jobs</a></li>
-      </ul>
-
-      <ul class="social-media social-media--menu">
-        <li class="social-media__item social-media__item--menu social-media--facebook">
-          <a href="https://pt-br.facebook.com/" class="social-media__link">
-            <img src="./imgs/facebook.svg" alt="Facebook" class="social-media__image">
-          </a>
-        </li>
-        <li class="social-media__item social-media__item--menu social-media--youtube">
-          <a href="https://www.youtube.com/" class="social-media__link">
-            <img src="./imgs/youtube.svg" alt="Youtube" class="social-media__image">
-          </a>
-        </li>
-        <li class="social-media__item social-media__item--menu social-media--instagram">
-          <a href="https://www.instagram.com/" class="social-media__link">
-            <img src="./imgs/instagram.svg" alt="Instagram" class="social-media__image">
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="hero__container">
-      <h1 class="hero__title">Stand Out from The Crowd.</h1>
-
-      <p class="hero__text">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
-
-      <a href="#" class="button">Recent Work</a>
-    </div>
-
-    <img src="./imgs/hero-graphic.svg" alt="Hero Graphic" class="hero__image">
-  </section>
 
   <section class="about">
     <div class="about__container">
@@ -139,7 +128,7 @@
       <p class="footer__text">Agency is a full-service agency, busy designing and building.</p>
 
       <div class="select">
-        <span class="select__label">Home</span>
+        <span class="select__label">About</span>
         <img src="./imgs/dropdown-dark.svg" alt="Dropdown" class="select__icon">
       </div>
 
