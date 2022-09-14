@@ -1,0 +1,36 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $dark;
+  background-image: url(../../imgs/line-menu.svg);
+  background-repeat: no-repeat;
+  background-position-x: 94px;
+
+  &--active {
+    left: 0;
+  }
+
+  &__list {
+    margin: 138px 32px 0;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    @include text-style("heading-5", $mobile-menu);
+    text-decoration: none;
+
+    &--active {
+      color: $white;
+    }
+  }
+}

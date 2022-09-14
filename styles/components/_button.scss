@@ -1,0 +1,8 @@
+.button {
+  @include text-style("button", $white);
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  background-color: $primary;
+}

@@ -1,0 +1,88 @@
+.about {
+  background-color: $dark;
+  overflow-x: hidden;
+  padding: 64px 0;
+
+  &__container {
+    padding: 0 32px;
+  }
+
+  &__tag {
+    margin-bottom: 24px;
+
+    &-number {
+      @include text-style("caption-1", $text-deactive);
+      margin-right: 24px;
+    }
+    &-text {
+      @include text-style("caption-1", $white);
+    }
+  }
+
+  &__title {
+    @include text-style("display-2", $white);
+    margin-bottom: 32px;
+  }
+
+  &__navigation {
+    display: grid;
+    grid-template-columns: 48px 48px 1fr;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__button {
+    border: none;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    &--transparent {
+      background-color: transparent;
+    }
+
+    &--primary {
+      background-color: $primary;
+    }
+  }
+
+  &__image {
+    position: relative;
+    top: 0;
+    left: -115px;
+    height: 424px;
+    margin: 56px 0;
+  }
+
+  &__heading {
+    @include text-style("heading-6", $white);
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    @include text-style("body-2", $text-dark-mode);
+    margin-bottom: 32px;
+  }
+
+  &__branding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 310px;
+    height: 310px;
+    box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.242297);
+    border-radius: 50%;
+    margin-top: 56px;
+
+    &-number {
+      color: $white;
+      font-size: 8.75rem;
+      font-weight: 600;
+    }
+
+    &-text {
+      @include text-style("menu-item", $white);
+    }
+  }
+}

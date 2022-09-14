@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <title>Folio Agency</title>
+  <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <section class="hero">
+    <header class="header">
+      <a href="./" class="header__link">
+        <img src="./imgs/logo-light-mode.svg" alt="Logo Folio Agency" class="header__logo">
+      </a>
+      <button type="button" class="header__button js-toggle-menu-button">
+        <img src="./imgs/menu.svg" alt="Menu icon" class="header__icon header__icon--hamburger">
+      </button>
+    </header>
+
+    <nav class="menu js-menu">
+      <header class="header">
+        <a href="./" class="header__link">
+          <img src="./imgs/logo-dark-mode.svg" alt="Logo Folio Agency Dark Mode" class="header__logo">
+        </a>
+        <button type="button" class="header__button js-toggle-menu-button">
+          <img src="./imgs/close.svg" alt="Close menu" class="header__icon header__icon--close">
+        </button>
+      </header>
+
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#" class="menu__link menu__link--active">Work</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Jobs</a></li>
+      </ul>
+
+      <ul class="social-media social-media--menu">
+        <li class="social-media__item social-media__item--menu social-media--facebook">
+          <a href="https://pt-br.facebook.com/" class="social-media__link">
+            <img src="./imgs/facebook.svg" alt="Facebook" class="social-media__image">
+          </a>
+        </li>
+        <li class="social-media__item social-media__item--menu social-media--youtube">
+          <a href="https://www.youtube.com/" class="social-media__link">
+            <img src="./imgs/youtube.svg" alt="Youtube" class="social-media__image">
+          </a>
+        </li>
+        <li class="social-media__item social-media__item--menu social-media--instagram">
+          <a href="https://www.instagram.com/" class="social-media__link">
+            <img src="./imgs/instagram.svg" alt="Instagram" class="social-media__image">
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="hero__container">
+      <h1 class="hero__title">Stand Out from The Crowd.</h1>
+
+      <p class="hero__text">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
+
+      <a href="#" class="button">Recent Work</a>
+    </div>
+
+    <img src="./imgs/hero-graphic.svg" alt="Hero Graphic" class="hero__image">
+  </section>
+
+  <section class="about">
+    <div class="about__container">
+      <div class="about__tag">
+        <span class="about__tag-number">01.</span>
+        <span class="about__tag-text">Who We Are</span>
+      </div>
+
+      <div class="about__title">We Make Designs that Lead and Inpire.</div>
+
+      <div class="about__navigation">
+        <button class="about__button about__button--transparent">
+          <img src="./imgs/arrow-left.svg" alt="Previous" class="about__button-img">
+        </button>
+        <button class="about__button about__button--primary">
+          <img src="./imgs/arrow-right.svg" alt="Next" class="about__button-img">
+        </button>
+
+        <div class="select select--about">
+          <span class="select__label select__label--about">2020</span>
+          <img src="./imgs/dropdown.svg" alt="Dropdown" class="select__icon">
+        </div>
+      </div>
+    </div>
+
+    <img src="./imgs/who-we-are.svg" alt="Who We Are" class="about__image">
+
+    <div class="about__container">
+      <h6 class="about__heading">A design team building a curated marketplace for UI designers.</h6>
+
+      <p class="about__text">4,404 curated design resources to energize your creative workflow. We're a growing family of 334,531 designers and makers from around the world</p>
+
+      <a href="#" class="button">Contact Us</a>
+
+      <div class="about__branding">
+        <p class="about__branding-number">28</p>
+        <p class="about__branding-text">Bigest Branding</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__card">
+      <img src="./imgs/speech-bubble.svg" alt="Speech baloon" class="footer__speech">
+
+      <p class="footer__greeting">
+        <img src="./imgs/wave-hand.svg" alt="Say hello" class="footer__greeting-img">
+        <span class="footer__greeting-text">Say hello</span>
+      </p>
+
+      <p class="footer__info">A design team building a curated marketplace for UI designers.</p>
+
+      <h2 class="footer__invite">Let’s talk about your next project</h2>
+
+      <div class="footer__card-container">
+        <a href="#" class="footer__button">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="footer__container">
+      <img src="./imgs/logo-light-mode.svg" alt="Logo Folio Agency" class="footer__image">
+
+      <p class="footer__text">Agency is a full-service agency, busy designing and building.</p>
+
+      <div class="select">
+        <span class="select__label">Home</span>
+        <img src="./imgs/dropdown-dark.svg" alt="Dropdown" class="select__icon">
+      </div>
+
+      <ul class="social-media social-media--footer">
+        <li class="social-media__item social-media__item--footer social-media--facebook">
+          <a href="https://pt-br.facebook.com/" class="social-media__link social-media__link--primary">
+            <img src="./imgs/facebook.svg" alt="Facebook" class="social-media__image">
+          </a>
+        </li>
+        <li class="social-media__item social-media__item--footer social-media--youtube">
+          <a href="https://www.youtube.com/" class="social-media__link">
+            <img src="./imgs/youtube.svg" alt="Youtube" class="social-media__image">
+          </a>
+        </li>
+        <li class="social-media__item social-media__item--footer social-media--instagram">
+          <a href="https://www.instagram.com/" class="social-media__link">
+            <img src="./imgs/instagram.svg" alt="Instagram" class="social-media__image">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <p class="footer__copyright">© 2020, UI8 LLC.</p>
+  </footer>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>

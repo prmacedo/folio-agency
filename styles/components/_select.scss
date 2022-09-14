@@ -1,0 +1,29 @@
+.select {
+  padding: 16px 24px;
+
+  display: flex;
+  justify-content: space-between;
+
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid $stroke-1;
+
+  &--about {
+    justify-self: end;
+    border: none;
+    width: 144px;
+    box-sizing: border-box;
+  }
+
+  &__label {
+    @include text-style("caption-2");
+
+    &--about {
+      color: $white;
+    }
+  }
+
+  &__icon {
+    width: 0.625rem;
+  }
+}
