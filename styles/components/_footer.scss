@@ -49,6 +49,7 @@
   &__invite {
     @include text-style("heading-5", $white);
     margin: 40px 0;
+    padding: 0 24px;
   }
 
   &__button {
@@ -71,7 +72,7 @@
   }
 
   &__text {
-    @include text-style("body-2");
+    @include text-style("body-2", $text-deactive);
     margin-top: 32px;
     margin-bottom: 24px;
   }
