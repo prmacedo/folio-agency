@@ -3,27 +3,6 @@
   overflow-x: hidden;
   padding: 64px 0;
 
-  &__container {
-    padding: 0 32px;
-  }
-
-  &__tag {
-    margin-bottom: 24px;
-
-    &-number {
-      @include text-style("caption-1", $text-deactive);
-      margin-right: 24px;
-    }
-    &-text {
-      @include text-style("caption-1", $white);
-    }
-  }
-
-  &__title {
-    @include text-style("display-2", $white);
-    margin-bottom: 32px;
-  }
-
   &__navigation {
     display: grid;
     grid-template-columns: 48px 48px 1fr;

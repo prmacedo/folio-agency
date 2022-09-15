@@ -2,10 +2,31 @@
   padding: 0 32px;
 }
 
-.mt-48 {
-  margin-top: 48px;
+.m {
+  &b- {
+    &8 {
+      margin-bottom: 8px;
+    }
+
+    &24 {
+      margin-bottom: 24px;
+    }
+
+    &32 {
+      margin-bottom: 32px;
+    }
+  }
+
+  &t- {
+    &48 {
+      margin-top: 48px;
+    }
+  }
 }
 
-.mb-8 {
-  margin-bottom: 8px;
+.z-index- {
+  &1 {
+    position: relative;
+    z-index: 1;
+  }
 }

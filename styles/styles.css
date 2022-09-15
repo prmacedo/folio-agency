@@ -73,26 +73,6 @@ body {
   background-position-x: 176px;
   overflow-x: hidden;
 }
-.hero__container {
-  padding: 0 32px;
-}
-.hero__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.5rem;
-  letter-spacing: -0.03125rem;
-  color: #232340;
-  margin-bottom: 24px;
-}
-.hero__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.75rem;
-  color: #606060;
-  margin-bottom: 24px;
-}
 .hero__image {
   position: relative;
   top: -40px;
@@ -103,36 +83,6 @@ body {
   background-color: #232340;
   overflow-x: hidden;
   padding: 64px 0;
-}
-.about__container {
-  padding: 0 32px;
-}
-.about__tag {
-  margin-bottom: 24px;
-}
-.about__tag-number {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #ADADAD;
-  margin-right: 24px;
-}
-.about__tag-text {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #FFFFFF;
-}
-.about__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.5rem;
-  letter-spacing: -0.03125rem;
-  color: #FFFFFF;
-  margin-bottom: 32px;
 }
 .about__navigation {
   display: grid;
@@ -407,35 +357,6 @@ body {
   height: 930px;
   box-sizing: border-box;
 }
-.cta__tag {
-  margin-bottom: 24px;
-}
-.cta__tag-number {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #FFFFFF;
-  margin-right: 24px;
-}
-.cta__tag-text {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #FFFFFF;
-}
-.cta__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.5rem;
-  letter-spacing: -0.03125rem;
-  color: #FFFFFF;
-  margin-bottom: 32px;
-  position: relative;
-  z-index: 1;
-}
 .cta__image {
   position: absolute;
   z-index: 0;
@@ -454,43 +375,6 @@ body {
   z-index: -1;
   top: 0;
   left: 162px;
-}
-.jobs__container {
-  padding: 0 32px;
-}
-.jobs__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.5rem;
-  letter-spacing: -0.03125rem;
-  color: #232340;
-  margin-bottom: 24px;
-}
-.jobs__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.75rem;
-  color: #606060;
-}
-.jobs__tag {
-  margin-bottom: 24px;
-}
-.jobs__tag-number {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #5468E7;
-  margin-right: 24px;
-}
-.jobs__tag-text {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #5468E7;
 }
 .jobs__card-list {
   display: grid;
@@ -564,20 +448,20 @@ body {
   grid-column: 2;
 }
 
-.summary__container {
-  padding: 0 32px;
-}
 .summary__title {
   font-style: normal;
   font-weight: 700;
   font-size: 3rem;
   line-height: 3.5rem;
   letter-spacing: -0.03125rem;
-  color: #000000;
+  color: #232340;
   margin-bottom: 24px;
 }
-.summary__title--dark {
-  color: #232340;
+.summary__title--dark-mode {
+  color: #FFFFFF;
+}
+.summary__title--white {
+  color: #FFFFFF;
 }
 .summary__text {
   font-style: normal;
@@ -585,9 +469,6 @@ body {
   font-size: 1rem;
   line-height: 1.75rem;
   color: #606060;
-}
-.summary__text--primary {
-  color: #5468E7;
 }
 .summary__tag {
   margin-bottom: 24px;
@@ -597,21 +478,27 @@ body {
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.125rem;
-  color: #606060;
+  color: #5468E7;
   margin-right: 24px;
 }
-.summary__tag-number--primary {
-  color: #5468E7;
+.summary__tag-number--dark-mode {
+  color: #ADADAD;
+}
+.summary__tag-number--white {
+  color: #FFFFFF;
 }
 .summary__tag-text {
   font-style: normal;
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.125rem;
-  color: #606060;
-}
-.summary__tag-text--primary {
   color: #5468E7;
+}
+.summary__tag-text--dark-mode {
+  color: #FFFFFF;
+}
+.summary__tag-text--white {
+  color: #FFFFFF;
 }
 
 .projects {
@@ -692,10 +579,20 @@ body {
   padding: 0 32px;
 }
 
+.mb-8 {
+  margin-bottom: 8px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
 .mt-48 {
   margin-top: 48px;
 }
 
-.mb-8 {
-  margin-bottom: 8px;
+.z-index-1 {
+  position: relative;
+  z-index: 1;
 }/*# sourceMappingURL=styles.css.map */
