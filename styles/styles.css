@@ -433,4 +433,125 @@ body {
   z-index: 0;
   top: 250px;
   left: -88px;
+}
+
+.jobs {
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
+  position: relative;
+  overflow: hidden;
+}
+.jobs::before {
+  content: url(../../imgs/line-jobs.svg);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 162px;
+}
+.jobs__container {
+  padding: 0 32px;
+}
+.jobs__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.03125rem;
+  color: #232340;
+  margin-bottom: 24px;
+}
+.jobs__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: #606060;
+}
+.jobs__tag {
+  margin-bottom: 24px;
+}
+.jobs__tag-number {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #5468E7;
+  margin-right: 24px;
+}
+.jobs__tag-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #5468E7;
+}
+.jobs__card-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 48px;
+  padding-bottom: 56px;
+  position: relative;
+  z-index: 1;
+}
+.jobs__card-item {
+  background: #FFFFFF;
+  border-radius: 24px;
+  margin: 0 32px;
+  padding: 45px 40px;
+  box-shadow: -4px 16px 46px 5px #EDEDED;
+}
+.jobs__card-item--highlight {
+  background-color: #232340;
+  margin-right: 0;
+  border-radius: 24px 0 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 64px;
+  grid-template-rows: auto auto 1fr;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+.jobs__card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.0125rem;
+  color: #232340;
+}
+.jobs__card-title--highlight {
+  color: #FFFFFF;
+  margin-top: 33px;
+}
+.jobs__card-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: #606060;
+  margin-bottom: 10px;
+}
+.jobs__card-description--highlight {
+  color: #8B8B8B;
+}
+.jobs__card-notification {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #FFFFFF;
+  background-image: linear-gradient(180deg, #3A8FFF 0%, #0837AE 100%);
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+.jobs__card-link {
+  text-decoration: none;
+}
+.jobs__card-image {
+  grid-row: 1/span 3;
+  grid-column: 2;
 }/*# sourceMappingURL=styles.css.map */
