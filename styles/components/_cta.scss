@@ -13,25 +13,6 @@
     box-sizing: border-box;
   }
 
-  &__tag {
-    margin-bottom: 24px;
-
-    &-number {
-      @include text-style("caption-1", $white);
-      margin-right: 24px;
-    }
-    &-text {
-      @include text-style("caption-1", $white);
-    }
-  }
-
-  &__title {
-    @include text-style("display-2", $white);
-    margin-bottom: 32px;
-    position: relative;
-    z-index: 1;
-  }
-
   &__image {
     position: absolute;
     z-index: 0;
