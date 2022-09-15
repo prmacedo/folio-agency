@@ -515,6 +515,9 @@ body {
   align-items: center;
   position: relative;
 }
+.project__image-container--shade-2 {
+  background-color: #908CFF;
+}
 .project__image-container--shade-3 {
   background-color: #E8BEFF;
 }
