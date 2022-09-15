@@ -8,7 +8,7 @@
   <!-- Font -->
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/sf-pro-display">
 
-  <title>Folio Agency</title>
+  <title>Folio Agency | Services</title>
   <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon">
 
   <!-- Styles -->
@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-  <section class="hero">
+  <section class="service">
     <header class="header">
       <a href="./" class="header__link">
         <img src="./imgs/logo-light-mode.svg" alt="Logo Folio Agency" class="header__logo">
@@ -37,9 +37,9 @@
       </header>
 
       <ul class="menu__list">
-        <li class="menu__item"><a href="./work.html" class="menu__link menu__link--active">Work</a></li>
+        <li class="menu__item"><a href="./work.html" class="menu__link">Work</a></li>
         <li class="menu__item"><a href="./about.html" class="menu__link">About</a></li>
-        <li class="menu__item"><a href="./services.html" class="menu__link">Services</a></li>
+        <li class="menu__item"><a href="./services.html" class="menu__link menu__link--active">Services</a></li>
         <li class="menu__item"><a href="./cta.html" class="menu__link">Jobs</a></li>
       </ul>
 
@@ -62,56 +62,81 @@
       </ul>
     </nav>
 
-    <div class="container">
-      <h1 class="summary__title">Stand Out from The Crowd.</h1>
+    <section class="summary">
+      <div class="container">
+        <div class="summary__tag">
+          <span class="summary__tag-number summary__tag-number--light-mode">03.</span>
+          <span class="summary__tag-text summary__tag-text--light-mode">What We Do</span>
+        </div>
 
-      <p class="summary__text mb-24">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
+        <div class="summary__title summary__title--light-mode">We Make Designs that Lead and Inpire.</div>
+      </div>
+    </section>
 
-      <a href="#" class="button">Recent Work</a>
+    <div class="navigation container">
+      <button class="navigation__button navigation__button--transparent">
+        <img src="./imgs/arrow-left.svg" alt="Previous" class="navigation__button-img">
+      </button>
+      <button class="navigation__button navigation__button--primary">
+        <img src="./imgs/arrow-right.svg" alt="Next" class="navigation__button-img">
+      </button>
     </div>
 
-    <img src="./imgs/hero-graphic.svg" alt="Hero Graphic" class="hero__image">
+    <div class="service__list container mt-56">
+      <div class="service__item">
+        <img src="./imgs/service-1.svg" alt="Strategy" class="service__image">
+        <p class="service__name">Strategy</p>
+      </div>
+
+      <div class="service__item service__item--highlight">
+        <img src="./imgs/service-2.svg" alt="Branding" class="service__image">
+        <p class="service__name service__name--highlight">Branding</p>
+      </div>
+
+      <div class="service__item">
+        <img src="./imgs/service-3.svg" alt="Interactive" class="service__image">
+        <p class="service__name">Interactive</p>
+      </div>
+
+      <div class="service__item">
+        <img src="./imgs/service-4.svg" alt="Communicate" class="service__image">
+        <p class="service__name">Communicate</p>
+      </div>
+    </div>
   </section>
 
-  <section class="about">
+  <div class="service__line"></div>
+
+  <section class="summary mt-56">
     <div class="container">
       <div class="summary__tag">
-        <span class="summary__tag-number summary__tag-number--dark-mode">01.</span>
-        <span class="summary__tag-text summary__tag-text--dark-mode">Who We Are</span>
+        <span class="summary__tag-number summary__tag-number--dark-mode">03.</span>
+        <span class="summary__tag-text summary__tag-text--dark">Achievement</span>
       </div>
 
-      <div class="summary__title summary__title--dark-mode mb-32">We Make Designs that Lead and Inpire.</div>
-
-      <div class="about__navigation">
-        <button class="about__button about__button--transparent">
-          <img src="./imgs/arrow-left.svg" alt="Previous" class="about__button-img">
-        </button>
-        <button class="about__button about__button--primary">
-          <img src="./imgs/arrow-right.svg" alt="Next" class="about__button-img">
-        </button>
-
-        <div class="select select--about">
-          <span class="select__label select__label--about">2020</span>
-          <img src="./imgs/dropdown.svg" alt="Dropdown" class="select__icon">
-        </div>
-      </div>
-    </div>
-
-    <img src="./imgs/who-we-are.svg" alt="Who We Are" class="about__image">
-
-    <div class="container">
-      <h6 class="about__heading">A design team building a curated marketplace for UI designers.</h6>
-
-      <p class="about__text">4,404 curated design resources to energize your creative workflow. We're a growing family of 334,531 designers and makers from around the world</p>
-
-      <a href="#" class="button">Contact Us</a>
-
-      <div class="about__branding">
-        <p class="about__branding-number">28</p>
-        <p class="about__branding-text">Bigest Branding</p>
-      </div>
+      <div class="summary__title summary__title--small">A design team building a curated marketplace for UI designers.</div>
     </div>
   </section>
+
+  <section class="successfull container">
+    <p class="successfull__number">68</p>
+    <p class="successfull__text">
+      <img src="./imgs/emoji.svg" alt="Emoji" class="successfull__emoji">
+      Successfull Projects
+    </p>
+  </section>
+
+  <section class="carousel mt-36">
+    <img src="./imgs/phone-services.svg" alt="Phone Services" class="carousel__item">
+
+    <ul class="carousel__navigation">
+      <li class="carousel__link"></li>
+      <li class="carousel__link carousel__link--active"></li>
+      <li class="carousel__link"></li>
+    </ul>
+  </section>
+
+  <div class="service__line-2"></div>
 
   <footer class="footer">
     <div class="footer__card">
@@ -137,7 +162,7 @@
       <p class="footer__text">Agency is a full-service agency, busy designing and building.</p>
 
       <div class="select">
-        <span class="select__label">Home</span>
+        <span class="select__label">Services</span>
         <img src="./imgs/dropdown-dark.svg" alt="Dropdown" class="select__icon">
       </div>
 

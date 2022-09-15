@@ -1,0 +1,77 @@
+.service {
+  background: $gradient-1;
+
+  &__line {
+    background: url(../../imgs/line-services.svg);
+    position: absolute;
+    top: 976px;
+    left: 0;
+
+    width: 100%;
+    height: 560px;
+
+    z-index: -1;
+  }
+
+  &__line-2 {
+    background: url(../../imgs/line-services-2.svg);
+    position: absolute;
+    top: 1836px;
+    left: -53px;
+
+    width: 100%;
+    height: 560px;
+
+    z-index: -1;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $white;
+    box-shadow: 0 8px rgba($color: $white, $alpha: 0.5), $box-shadow;
+    border-radius: 32px;
+
+    box-sizing: border-box;
+    padding: 48px 0;
+
+    &--highlight {
+      background-color: $primary;
+      box-shadow: none;
+    }
+  }
+
+  &__name {
+    margin-left: 24px;
+    @include text-style("menu-item", $primary);
+
+    &--highlight {
+      color: $white;
+    }
+  }
+}
+
+.successfull {
+  &__number {
+    @include text-style("number", $primary);
+  }
+
+  &__text {
+    @include text-style("menu-item", $dark);
+    display: flex;
+    align-items: center;
+  }
+
+  &__emoji {
+    margin-right: 16px;
+    font-size: 1.125rem;
+  }
+}

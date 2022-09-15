@@ -10,6 +10,11 @@
     &--white {
       color: $white;
     }
+
+    &--small {
+      @include text-style("heading-6", $dark);
+      width: 228px;
+    }
   }
 
   &__text {
@@ -40,6 +45,10 @@
 
       &--white {
         color: $white;
+      }
+
+      &--dark {
+        color: $dark;
       }
     }
   }
