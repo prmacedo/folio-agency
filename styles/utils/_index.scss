@@ -1,5 +1,13 @@
 .container {
   padding: 0 32px;
+
+  &--small {
+    padding: 0 58px;
+  }
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 .m {
@@ -14,6 +22,10 @@
 
     &32 {
       margin-bottom: 32px;
+    }
+
+    &40 {
+      margin-bottom: 40px;
     }
   }
 

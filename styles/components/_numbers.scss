@@ -1,0 +1,29 @@
+.numbers {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+
+  &__number {
+    @include text-style("number", $white);
+
+    &--plus {
+      &::after {
+        content: "+";
+        font-size: 2.8125rem;
+        line-height: 5.5rem;
+        vertical-align: top;
+      }
+    }
+  }
+
+  &__title {
+    @include text-style("menu-item", $white);
+    padding-bottom: 32px;
+    border-bottom: 1px solid $text-dark-mode;
+    margin-bottom: 32px;
+  }
+
+  &__description {
+    @include text-style("body-2", $text-dark-mode);
+  }
+}

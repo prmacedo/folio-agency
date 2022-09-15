@@ -1,0 +1,9 @@
+.download {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    @include text-style("tablet-menu", $white);
+    margin-left: 12px;
+  }
+}

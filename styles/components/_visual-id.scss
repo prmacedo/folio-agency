@@ -1,0 +1,51 @@
+.visual-id {
+  &__number {
+    @include text-style("number", $primary);
+  }
+
+  &__text {
+    @include text-style("menu-item", $dark);
+
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      margin-left: 52px;
+      width: 16px;
+      height: 2px;
+      background-color: $primary;
+    }
+  }
+
+  &__number {
+    &::after {
+      content: "+";
+      font-size: 2.8125rem;
+      line-height: 5.5rem;
+      vertical-align: top;
+    }
+  }
+
+  &__card {
+    margin: 56px 16px 0;
+    box-shadow: 0 8px rgba($color: $white, $alpha: 0.5), $box-shadow;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 42px;
+
+    padding: 36px 24px 48px;
+    border-radius: 28px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    margin-left: 24px;
+    @include text-style("menu-item", $dark);
+  }
+}
