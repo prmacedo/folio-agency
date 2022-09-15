@@ -464,6 +464,16 @@ body {
   line-height: 1.75rem;
   color: #606060;
 }
+.summary__text--dark {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  color: #232340;
+}
+.summary__text--small {
+  width: 180px;
+}
 .summary__tag {
   margin-bottom: 24px;
 }
@@ -821,6 +831,43 @@ body {
   color: #232340;
 }
 
+.bento {
+  background-image: url(../../imgs/line-bento.svg);
+  background-repeat: no-repeat;
+  background-position-x: 176px;
+  overflow-x: hidden;
+}
+.bento__image {
+  position: relative;
+  top: 0;
+  left: 40px;
+}
+.bento__featured {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.625rem;
+  line-height: 0.8125rem;
+  margin-bottom: 16px;
+  display: inline-block;
+  background-color: #FFBA79;
+  padding: 8px 16px;
+  border-radius: 14px;
+}
+.bento__info {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 6rem 6rem;
+  gap: 40px;
+}
+.bento__description {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #5468E7;
+  margin-top: 16px;
+}
+
 .container {
   padding: 0 32px;
 }
@@ -834,6 +881,9 @@ body {
 
 .mb-8 {
   margin-bottom: 8px;
+}
+.mb-16 {
+  margin-bottom: 16px;
 }
 .mb-24 {
   margin-bottom: 24px;
