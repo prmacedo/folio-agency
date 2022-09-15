@@ -3,27 +3,6 @@
   overflow-x: hidden;
   padding: 64px 0;
 
-  &__navigation {
-    display: grid;
-    grid-template-columns: 48px 48px 1fr;
-    align-items: center;
-    gap: 16px;
-  }
-
-  &__button {
-    border: none;
-    border-radius: 50%;
-    height: 48px;
-    width: 48px;
-    &--transparent {
-      background-color: transparent;
-    }
-
-    &--primary {
-      background-color: $primary;
-    }
-  }
-
   &__image {
     position: relative;
     top: 0;

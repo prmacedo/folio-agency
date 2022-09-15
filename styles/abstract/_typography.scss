@@ -202,4 +202,17 @@
       color: $color;
     }
   }
+
+  @else if $style-name == "number" {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8.75rem;
+    line-height: 10.4375rem;
+    @if $color == false {
+      color: $text-light-mode;
+    }
+    @else {
+      color: $color;
+    }
+  }
 }
