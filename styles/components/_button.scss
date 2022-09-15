@@ -11,4 +11,9 @@
     color: $primary;
     background-color: $white;
   }
+
+  &--above {
+    position: relative;
+    z-index: 10;
+  }
 }
