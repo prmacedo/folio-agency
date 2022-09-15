@@ -16,4 +16,9 @@
     position: relative;
     z-index: 10;
   }
+
+  &--large {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }

@@ -53,7 +53,7 @@
     border-radius: 24px;
     margin: 0 32px;
     padding: 45px 40px;
-    box-shadow: -4px 16px 46px 5px $shade;
+    box-shadow: -4px 16px 46px 5px $shade-1;
 
     &--highlight {
       background-color: $dark;
@@ -106,5 +106,4 @@
     grid-row: 1 / span 3;
     grid-column: 2;
   }
-
 }
