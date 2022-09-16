@@ -1303,6 +1303,11 @@ body {
   top: 0;
   left: 40px;
 }
+@media (min-width: 768px) {
+  .bento__image {
+    left: -32px;
+  }
+}
 .bento__featured {
   color: #FFFFFF;
   font-weight: 600;
@@ -1327,6 +1332,10 @@ body {
   line-height: 1rem;
   color: #5468E7;
   margin-top: 16px;
+}
+.bento__container--tablet {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .overview {
