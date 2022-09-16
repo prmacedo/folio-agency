@@ -1145,6 +1145,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 768px) {
+  .carousel {
+    align-self: flex-start;
+  }
+}
 .carousel__navigation {
   display: flex;
   align-items: center;
@@ -1349,6 +1354,15 @@ body {
   top: 0;
   left: 40px;
 }
+.overview__container--tablet {
+  padding-bottom: 56px;
+}
+@media (min-width: 768px) {
+  .overview__container--tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 .application {
   margin-top: 40px;
@@ -1438,6 +1452,9 @@ body {
 .mb-40 {
   margin-bottom: 40px;
 }
+.mt-0 {
+  margin-top: 0;
+}
 .mt-36 {
   margin-top: 36px;
 }
@@ -1446,6 +1463,11 @@ body {
 }
 .mt-56 {
   margin-top: 56px;
+}
+@media (min-width: 768px) {
+  .mt-0--tablet {
+    margin-top: 0;
+  }
 }
 
 .z-index-1 {

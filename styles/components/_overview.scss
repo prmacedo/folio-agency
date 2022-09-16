@@ -9,4 +9,13 @@
     top: 0;
     left: 40px;
   }
+
+  &__container--tablet {
+    padding-bottom: 56px;
+
+    @include breakpoint("tablet") {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 }
