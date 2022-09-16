@@ -762,6 +762,9 @@ body {
   border-bottom: 1px solid #8B8B8B;
   margin-bottom: 32px;
 }
+.numbers__icon {
+  font-size: 1.125rem;
+}
 .numbers__description {
   font-style: normal;
   font-weight: 400;
@@ -773,6 +776,7 @@ body {
 .download {
   display: flex;
   align-items: center;
+  margin-top: 32px;
 }
 .download__text {
   font-style: normal;
