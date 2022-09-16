@@ -71,13 +71,17 @@
   </nav>
 
   <section class="about">
-    <div class="container">
-      <div class="summary__tag">
-        <span class="summary__tag-number summary__tag-number--dark-mode">01.</span>
-        <span class="summary__tag-text summary__tag-text--dark-mode">Who We Are</span>
-      </div>
+    <div class="container about__container--tablet">
+      <img src="./imgs/logo-primary.svg" alt="Logo" class="about__logo">
 
-      <div class="summary__title summary__title--dark-mode mb-32">We Make Designs that Lead and Inpire.</div>
+      <div class="summary">
+        <div class="summary__tag">
+          <span class="summary__tag-number summary__tag-number--dark-mode">01.</span>
+          <span class="summary__tag-text summary__tag-text--dark-mode">Who We Are</span>
+        </div>
+
+        <div class="summary__title summary__title--dark-mode mb-32">We Make Designs that Lead and Inpire.</div>
+      </div>
 
       <div class="navigation">
         <button class="navigation__button navigation__button--transparent">
@@ -94,14 +98,27 @@
       </div>
     </div>
 
-    <img src="./imgs/who-we-are.svg" alt="Who We Are" class="about__image">
+    <div class="timeline">
+      <ul class="timeline__years">
+        <li class="timeline__item">2017</li>
+        <li class="timeline__item">2018</li>
+        <li class="timeline__item">2019</li>
+        <li class="timeline__item timeline__item--active">2020</li>
+        <li class="timeline__item">2021</li>
+      </ul>
 
-    <div class="container">
-      <h6 class="about__heading">A design team building a curated marketplace for UI designers.</h6>
+      <img src="./imgs/who-we-are.svg" alt="Who We Are" class="timeline__image timeline__image--mobile">
+      <img src="./imgs/who-we-are-tablet.svg" alt="Who We Are" class="timeline__image timeline__image--tablet">
+    </div>
 
-      <p class="about__text">4,404 curated design resources to energize your creative workflow. We're a growing family of 334,531 designers and makers from around the world</p>
+    <div class="about__info">
+      <div class="about__description">
+        <h6 class="about__heading">A design team building a curated marketplace for UI designers.</h6>
 
-      <a href="#" class="button">Contact Us</a>
+        <p class="about__text">4,404 curated design resources to energize your creative workflow. We're a growing family of 334,531 designers and makers from around the world</p>
+
+        <a href="#" class="button">Contact Us</a>
+      </div>
 
       <div class="about__branding">
         <p class="about__branding-number">28</p>

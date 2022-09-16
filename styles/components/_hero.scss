@@ -8,5 +8,30 @@
     position: relative;
     top: -40px;
     left: 40px;
+
+    @include breakpoint("tablet") {
+      top: 0;
+      left: -32px;
+    }
+  }
+
+  @include breakpoint("tablet") {
+    &__container--tablet {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 32px;
+    }
+
+    &__swipe {
+      display: flex;
+      align-items: center;
+      margin-top: 32px;
+
+      &-text {
+        @include text-style("tablet-menu", $text-dark-mode);
+        margin-left: 16px;
+        width: 90px;
+      }
+    }
   }
 }

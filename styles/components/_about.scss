@@ -3,12 +3,10 @@
   overflow-x: hidden;
   padding: 64px 0;
 
-  &__image {
-    position: relative;
-    top: 0;
-    left: -115px;
-    height: 424px;
-    margin: 56px 0;
+  @include breakpoint("tablet") {
+    background-image: url(../../imgs/bg-about.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
   }
 
   &__heading {
@@ -33,6 +31,10 @@
     border-radius: 50%;
     margin-top: 56px;
 
+    @include breakpoint("tablet") {
+      margin-top: 0;
+    }
+
     &-number {
       color: $white;
       font-size: 8.75rem;
@@ -41,6 +43,55 @@
 
     &-text {
       @include text-style("menu-item", $white);
+    }
+  }
+
+  &__logo {
+    display: none;
+    @include breakpoint("tablet") {
+      display: block;
+    }
+  }
+
+  @include breakpoint("tablet") {
+    &__container--tablet {
+      display: grid;
+      grid-template-columns: 24px 1fr auto;
+      gap: 24px;
+    }
+
+    &__info {
+      margin-top: 56px;
+      padding: 0 32px;
+
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 32px;
+
+      @include breakpoint("big-tablet") {
+        padding: 0 80px;
+      }
+    }
+
+    &__description {
+      position: relative;
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        left: -16px;
+
+        width: 2px;
+        height: 56px;
+
+        background-color: $accent-2;
+
+        @include breakpoint("big-tablet") {
+          left: -36px;
+        }
+      }
     }
   }
 }
