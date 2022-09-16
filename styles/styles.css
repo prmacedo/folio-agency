@@ -898,6 +898,18 @@ body {
   color: #232340;
   margin-bottom: 24px;
 }
+@media (min-width: 768px) {
+  .summary__title {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  .summary__title {
+    font-size: 5.25rem;
+    line-height: 6.25rem;
+  }
+}
 .summary__title--dark-mode {
   color: #FFFFFF;
 }
@@ -1816,6 +1828,18 @@ body {
   line-height: 3.5rem;
   letter-spacing: -0.03125rem;
   color: #232340;
+}
+@media (min-width: 768px) {
+  .e404__text {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  .e404__text {
+    font-size: 5.25rem;
+    line-height: 6.25rem;
+  }
 }
 
 .container {

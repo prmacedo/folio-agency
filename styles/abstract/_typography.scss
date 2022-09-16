@@ -25,6 +25,16 @@
     @else {
       color: $color;
     }
+
+    @include breakpoint("tablet") {
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
+
+    @include breakpoint("desktop") {
+      font-size: 5.25rem;
+      line-height: 6.25rem;
+    }
   }
 
   @else if $style-name == "heading-1" {
