@@ -1,0 +1,21 @@
+.cs-about {
+  background-color: $dark;
+  background-image: url(../../imgs/line-cs-about.svg);
+  background-repeat: no-repeat;
+  background-position-x: 176px;
+  position: relative;
+
+  padding-bottom: 450px;
+  margin-bottom: 200px;
+
+  &::after {
+    content: "";
+    background-image: url("../../imgs/laptop.svg");
+    background-repeat: no-repeat;
+    background-position: 32px 76px;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+  }
+
+}
