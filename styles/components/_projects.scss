@@ -57,22 +57,6 @@
     }
   }
 
-  &__featured {
-    position: absolute;
-    left: 24px;
-    bottom: 24px;
-
-    color: $white;
-    font-weight: 600;
-    font-size: 0.625rem;
-    line-height: 0.8125rem;
-
-    display: inline-block;
-    background-color: $shade-2;
-    padding: 8px 16px;
-    border-radius: 14px;
-  }
-
   &__title {
     @include text-style("heading-6", $dark);
     margin-top: 24px;
@@ -153,7 +137,7 @@
       z-index: 1;
 
       @include breakpoint("tablet") {
-        left:-236px;
+        left:-55%;
       }
     }
   }

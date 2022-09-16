@@ -1,3 +1,7 @@
+.work__logo {
+  display: none;
+}
+
 @include breakpoint("tablet") {
   .work__projects {
     display: grid;
@@ -44,6 +48,7 @@
   }
 
   .work__logo {
+    display: block;
     margin-right: 24px;
   }
 

@@ -10,4 +10,10 @@
       @content;
     }
   }
+
+  @else if $point == desktop {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  }
 }
