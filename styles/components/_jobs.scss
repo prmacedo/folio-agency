@@ -114,14 +114,18 @@
   }
 
   &__available {
-    display: flex;
-    align-items: center;
-    margin-top: 32px;
+    display: none;
 
-    &-text {
-      @include text-style("tablet-menu", $text-dark-mode);
-      margin-left: 16px;
-      width: 80px;
+    @include breakpoint("tablet") {
+      display: flex;
+      align-items: center;
+      margin-top: 32px;
+
+      &-text {
+        @include text-style("tablet-menu", $text-dark-mode);
+        margin-left: 16px;
+        width: 80px;
+      }
     }
   }
 }

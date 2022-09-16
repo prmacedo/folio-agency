@@ -110,7 +110,19 @@
   }
 
   &__featured  {
-    display: none;
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+
+    color: $white;
+    font-weight: 600;
+    font-size: 0.625rem;
+    line-height: 0.8125rem;
+
+    display: inline-block;
+    background-color: $shade-2;
+    padding: 8px 16px;
+    border-radius: 14px;
   }
 
   @include breakpoint("tablet") {
@@ -119,19 +131,9 @@
     }
 
     &__featured {
-      color: $white;
-      font-weight: 600;
-      font-size: 0.625rem;
-      line-height: 0.8125rem;
       margin-bottom: 16px;
-
-      display: inline-block;
-      background-color: $shade-2;
-      padding: 8px 16px;
-      border-radius: 14px;
       height: fit-content;
 
-      position: absolute;
       top: 24px;
       left: -24px;
       z-index: 1;
