@@ -589,6 +589,64 @@ body {
   position: relative;
   padding-bottom: 48px;
 }
+@media (min-width: 768px) {
+  .cta {
+    border-radius: 28px;
+    padding: 80px;
+    display: grid;
+    grid-template-columns: 28px 260px;
+    gap: 300px;
+    background-color: #5468E7;
+    background-image: url(../../imgs/phone-tablet.svg);
+    background-repeat: no-repeat;
+    background-position-x: 24px;
+    background-position-y: 80px;
+  }
+  .cta__banner {
+    position: relative;
+    padding: 0 32px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .cta__banner {
+    padding: 0 100px;
+  }
+}
+@media (min-width: 768px) {
+  .cta__banner::before {
+    content: "";
+    background: url(../../imgs/polygon-blue.svg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 365px;
+    position: absolute;
+    top: 24px;
+    left: 12px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .cta__banner::before {
+    left: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .cta__banner::after {
+    content: "";
+    background: url(../../imgs/polygon-pink.svg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 365px;
+    position: absolute;
+    top: 24px;
+    right: 0;
+    z-index: 2;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .cta__banner::after {
+    padding: 0 15px;
+  }
+}
 .cta__container {
   background-color: #5468E7;
   margin: 0 32px;
@@ -598,11 +656,29 @@ body {
   height: 930px;
   box-sizing: border-box;
 }
+@media (min-width: 768px) {
+  .cta__container {
+    background-color: transparent;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 3;
+  }
+}
 .cta__image {
   position: absolute;
   z-index: 0;
   top: 250px;
   left: -88px;
+}
+.cta__image--tablet {
+  display: none;
+}
+@media (min-width: 768px) {
+  .cta__image--mobile {
+    display: none;
+  }
 }
 
 .jobs {

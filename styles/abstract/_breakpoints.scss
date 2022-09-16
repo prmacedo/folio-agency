@@ -4,4 +4,10 @@
       @content;
     }
   }
+
+  @else if $point == big-tablet {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
 }
