@@ -1359,6 +1359,48 @@ body {
   height: 600px;
   position: absolute;
 }
+@media (min-width: 768px) {
+  .cs-about::after {
+    background-position-x: center;
+  }
+}
+.cs-about__logo {
+  display: none;
+}
+@media (min-width: 768px) {
+  .cs-about__logo {
+    display: block;
+    grid-row: 1/span 2;
+  }
+}
+@media (min-width: 768px) {
+  .cs-about__container {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    padding: 0 32px;
+  }
+  .cs-about__container .numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cs-about__container .numbers .numbers__item:first-child {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .cs-about__container .numbers .numbers__item:last-child {
+    grid-row: 1;
+    grid-column: 1;
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cs-about__visual-container {
+    display: grid;
+    grid-template-columns: 24px 1fr 1fr;
+    padding: 0 32px;
+  }
+}
 
 .numbers {
   display: grid;
