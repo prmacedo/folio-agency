@@ -16,4 +16,10 @@
       @content;
     }
   }
+
+  @else if $point == fold {
+    @media (max-width: 300px) {
+      @content;
+    }
+  }
 }

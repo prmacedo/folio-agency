@@ -3,6 +3,9 @@
 
   &--small {
     padding: 0 58px;
+    @include breakpoint("fold") {
+      padding: 0 32px;
+    }
   }
 
   @include breakpoint("desktop") {

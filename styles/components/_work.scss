@@ -88,3 +88,12 @@
     border: none;
   }
 }
+
+
+@include breakpoint("fold") {
+  .work__summary {
+    .summary__title{
+      font-size: 2.25rem;
+    }
+  }
+}

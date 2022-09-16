@@ -1,5 +1,20 @@
+
+
 .service {
   background: $gradient-1;
+
+  &__logo {
+    display: none;
+    @include breakpoint("tablet") {
+      display: block;
+    }
+  }
+
+  &__image {
+    @include breakpoint("fold") {
+      width: 64px;
+    }
+  }
 
   &__line {
     background: url(../../imgs/line-services.svg);

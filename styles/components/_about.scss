@@ -31,6 +31,11 @@
     border-radius: 50%;
     margin-top: 56px;
 
+    @include breakpoint("fold") {
+      width: 220px;
+      height: 220px;
+    }
+
     @include breakpoint("tablet") {
       margin-top: 0;
     }
@@ -39,6 +44,9 @@
       color: $white;
       font-size: 8.75rem;
       font-weight: 600;
+      @include breakpoint("fold") {
+        font-size: 6.75rem;
+      }
     }
 
     &-text {
@@ -51,6 +59,10 @@
     @include breakpoint("tablet") {
       display: block;
     }
+  }
+
+  &__info {
+    padding: 0 32px;
   }
 
   @include breakpoint("tablet") {
