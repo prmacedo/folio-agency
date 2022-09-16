@@ -11,6 +11,12 @@
 }
 
 .m {
+  &r- {
+    &32 {
+      margin-right: 32px;
+    }
+  }
+
   &b- {
     &8 {
       margin-bottom: 8px;
@@ -52,5 +58,27 @@
   &1 {
     position: relative;
     z-index: 1;
+  }
+}
+
+
+.d- {
+  @include breakpoint("tablet") {
+    &none-tablet {
+      display: none;
+    }
+
+    &flex-tablet {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &inline-flex-tablet {
+    display: none;
+    @include breakpoint("tablet") {
+      display: inline-flex;
+    }
   }
 }
