@@ -150,51 +150,81 @@
   <footer class="footer">
     <div class="footer__card">
       <img src="./imgs/speech-bubble.svg" alt="Speech baloon" class="footer__speech">
+      <img src="./imgs/logo-purple.svg" alt="Logo Folio Agency" class="footer__logo">
 
       <p class="footer__greeting">
         <img src="./imgs/wave-hand.svg" alt="Say hello" class="footer__greeting-img">
         <span class="footer__greeting-text">Say hello</span>
       </p>
 
-      <p class="footer__info">A design team building a curated marketplace for UI designers.</p>
+      <div class="footer__info">
+        <p class="footer__content">
+          A design team building a curated marketplace for UI designers.
+        </p>
+      </div>
 
-      <h2 class="footer__invite">Let’s talk about your next project</h2>
+      <div class="footer__bottom">
+        <div class="footer__left">
+          <h2 class="footer__invite">Let’s talk about your next project</h2>
 
-      <div class="footer__card-container">
-        <a href="#" class="footer__button">Contact Us</a>
+          <div class="footer__card-container">
+            <a href="#" class="footer__button">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer__right">
+          <img src="./imgs/speech-bubble.svg" alt="Speech baloon" class="footer__right-speech">
+          <p class="footer__right-text">Invest in your designs today!</p>
+          <div class="footer__right-arrow">
+            <img src="./imgs/arrow.svg" alt="Arrow" class="footer__right-image">
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="footer__container">
       <img src="./imgs/logo-light-mode.svg" alt="Logo Folio Agency" class="footer__image">
 
-      <p class="footer__text">Agency is a full-service agency, busy designing and building.</p>
+      <p class="footer__text footer__text--mobile">Agency is a full-service agency, busy designing and building.</p>
+      <p class="footer__text footer__text--tablet">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
 
       <div class="select">
-        <span class="select__label">Services</span>
+        <span class="select__label">Jobs</span>
         <img src="./imgs/dropdown-dark.svg" alt="Dropdown" class="select__icon">
       </div>
 
-      <ul class="social-media social-media--footer">
-        <li class="social-media__item social-media__item--footer social-media--facebook">
-          <a href="https://pt-br.facebook.com/" class="social-media__link social-media__link--primary">
-            <img src="./imgs/facebook.svg" alt="Facebook" class="social-media__image">
-          </a>
-        </li>
-        <li class="social-media__item social-media__item--footer social-media--youtube">
-          <a href="https://www.youtube.com/" class="social-media__link">
-            <img src="./imgs/youtube.svg" alt="Youtube" class="social-media__image">
-          </a>
-        </li>
-        <li class="social-media__item social-media__item--footer social-media--instagram">
-          <a href="https://www.instagram.com/" class="social-media__link">
-            <img src="./imgs/instagram.svg" alt="Instagram" class="social-media__image">
-          </a>
-        </li>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="./about.html" class="footer__link">About</a></li>
+        <li class="footer__item"><a href="./work.html" class="footer__link">Work</a></li>
+        <li class="footer__item"><a href="./services.html" class="footer__link footer__link--active">Services</a></li>
+        <li class="footer__item"><a href="./cta.html" class="footer__link">Jobs</a></li>
+        <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
       </ul>
-    </div>
 
-    <p class="footer__copyright">© 2020, UI8 LLC.</p>
+      <div class="footer__footer">
+        <ul class="social-media social-media--footer">
+          <p class="social-media__follow">Follow Us</p>
+          <li class="social-media__item social-media__item--footer social-media--facebook">
+            <a href="https://pt-br.facebook.com/" class="social-media__link social-media__link--primary">
+              <img src="./imgs/facebook.svg" alt="Facebook" class="social-media__image social-media__image--mobile">
+              <img src="./imgs/logo-facebook.svg" alt="Facebook" class="social-media__image social-media__image--tablet">
+            </a>
+          </li>
+          <li class="social-media__item social-media__item--footer social-media--youtube">
+            <a href="https://www.youtube.com/" class="social-media__link">
+              <img src="./imgs/youtube.svg" alt="Youtube" class="social-media__image">
+            </a>
+          </li>
+          <li class="social-media__item social-media__item--footer social-media--instagram">
+            <a href="https://www.instagram.com/" class="social-media__link">
+              <img src="./imgs/instagram.svg" alt="Instagram" class="social-media__image">
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer__copyright">© 2020, UI8 LLC.</p>
+      </div>
+    </div>
   </footer>
 
   <script src="./js/index.js"></script>
