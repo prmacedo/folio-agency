@@ -1790,6 +1790,34 @@ body {
   }
 }
 
+.e404 {
+  background-image: url(../../imgs/line.svg);
+  background-repeat: no-repeat;
+  background-position-x: 176px;
+}
+.e404__content {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.e404__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8.75rem;
+  line-height: 10.4375rem;
+  color: #232340;
+}
+.e404__text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.03125rem;
+  color: #232340;
+}
+
 .container {
   padding: 0 32px;
 }
