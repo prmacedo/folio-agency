@@ -1,0 +1,21 @@
+.overview {
+  background-image: url(../../imgs/line-bento.svg);
+  background-repeat: no-repeat;
+  background-position-x: 176px;
+  overflow-x: hidden;
+
+  &__image {
+    position: relative;
+    top: 0;
+    left: 40px;
+  }
+
+  &__container--tablet {
+    padding-bottom: 56px;
+
+    @include breakpoint("tablet") {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.navigation {
+  display: grid;
+  grid-template-columns: 48px 48px 1fr;
+  align-items: center;
+  gap: 16px;
+
+  @include breakpoint("fold") {
+    grid-template-columns: auto 1fr;
+  }
+
+  &--center {
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    &--transparent {
+      background-color: transparent;
+    }
+
+    &--primary {
+      background-color: $primary;
+    }
+  }
+}

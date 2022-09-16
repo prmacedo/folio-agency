@@ -1,0 +1,68 @@
+.summary {
+  &__title {
+    @include text-style("display-2", $dark);
+    margin-bottom: 24px;
+
+    &--dark-mode {
+      color: $white;
+    }
+
+    &--white {
+      color: $white;
+    }
+
+    &--small {
+      @include text-style("heading-6", $dark);
+      width: 228px;
+    }
+  }
+
+  &__text {
+    @include text-style("body-2");
+
+    &--dark {
+      @include text-style("button", $dark);
+    }
+
+    &--small {
+      width: 180px;
+    }
+
+    &--medium {
+      width: 332px;
+      max-width: 100%;
+    }
+  }
+
+  &__tag {
+    margin-bottom: 24px;
+
+    &-number {
+      @include text-style("caption-1", $primary);
+      margin-right: 24px;
+
+      &--dark-mode {
+        color: $text-deactive;
+      }
+
+      &--white {
+        color: $white;
+      }
+    }
+    &-text {
+      @include text-style("caption-1", $primary);
+
+      &--dark-mode {
+        color: $white;
+      }
+
+      &--white {
+        color: $white;
+      }
+
+      &--dark {
+        color: $dark;
+      }
+    }
+  }
+}

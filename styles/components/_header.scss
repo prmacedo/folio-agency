@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 52px 32px;
+
+  &__image {
+    height: 32px;
+    cursor: pointer;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+
+    @include breakpoint("tablet") {
+      display: none;
+    }
+  }
+
+  &__icon {
+    cursor: pointer;
+    &--hamburger {
+      width: 32px;
+    }
+    &--close {
+      width: 24px;
+    }
+  }
+
+  &__list {
+    display: none;
+  }
+
+  @include breakpoint("tablet") {
+    &__list {
+      display: flex;
+    }
+
+    &__link {
+      @include text-style("tablet-menu", $text-dark-mode);
+      margin-right: 28px;
+      text-decoration: none;
+
+      &--active {
+        color: $primary;
+      }
+
+      &--notification {
+        position: relative;
+
+        &::after {
+          @include text-style("caption-1", $white);
+
+          content: "2";
+
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+
+          position: relative;
+          right: -8px;
+          top: -8px;
+
+          background: $gradient-2;
+          border-radius: 50%;
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+
+      &--contact {
+        color: $white;
+        padding: 16px 40px;
+        background: $dark;
+        border-radius: 8px;
+        margin: 0;
+
+        &--dark-mode {
+          color: $dark;
+          background-color: $white;
+        }
+      }
+
+      &--dark-mode {
+        color: $white;
+      }
+    }
+  }
+}

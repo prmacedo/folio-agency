@@ -1,0 +1,23 @@
+.recent-work {
+  @include breakpoint("tablet") {
+    display: grid;
+    grid-template-columns: 24px auto;
+
+    padding: 0 32px;
+
+    background-image: url(../../imgs/bg-recent.svg);
+    background-size: cover;
+  }
+
+  &__logo {
+    display: none;
+
+    @include breakpoint("tablet") {
+      display: block;
+    }
+  }
+
+  .project__featured {
+    display: none;
+  }
+}

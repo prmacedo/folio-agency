@@ -1,0 +1,146 @@
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin: 56px 32px 0;
+
+  @include breakpoint("tablet") {
+    grid-column: 2;
+
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.project {
+  &__image {
+    max-width: 100%;
+
+    @include breakpoint("tablet") {
+      width: 80%;
+    }
+  }
+
+  &__image-container {
+    background-color: $accent;
+    border-radius: 18px;
+
+    height: 356px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    &--shade-2 {
+      background-color: $shade-2;
+      @include breakpoint("tablet") {
+        background-color: $shade-5;
+      }
+    }
+
+    &--shade-3 {
+      background-color: $shade-3;
+    }
+
+    &--shade-4 {
+      background-color: $shade-4;
+    }
+
+    &--shade-5 {
+      background-color: $shade-5;
+    }
+
+    @include breakpoint("tablet") {
+      width: 90%;
+    }
+  }
+
+  &__title {
+    @include text-style("heading-6", $dark);
+    margin-top: 24px;
+  }
+
+  &__description {
+    @include text-style("body-2");
+    width: 228px;
+    margin-top: 16px;
+
+    @include breakpoint("tablet") {
+      width: 100%;
+    }
+
+    &--tablet {
+      display: none;
+
+      @include breakpoint("tablet") {
+        display: block;
+      }
+    }
+
+    @include breakpoint("tablet") {
+      &--mobile {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 48px;
+    width: 48px;
+    margin-top: 24px;
+
+    border: 2px solid $dark;
+    border-radius: 50%;
+
+    &-img {
+      width: 20px;
+    }
+
+    @include breakpoint("tablet") {
+      position: absolute;
+      top: 200px;
+      right: 0;
+    }
+  }
+
+  &__featured  {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+
+    color: $white;
+    font-weight: 600;
+    font-size: 0.625rem;
+    line-height: 0.8125rem;
+
+    display: inline-block;
+    background-color: $shade-2;
+    padding: 8px 16px;
+    border-radius: 14px;
+  }
+
+  @include breakpoint("tablet") {
+    &__item {
+      position: relative;
+    }
+
+    &__featured {
+      margin-bottom: 16px;
+      height: fit-content;
+
+      top: 24px;
+      left: -24px;
+      z-index: 1;
+
+      @include breakpoint("tablet") {
+        left:-55%;
+      }
+    }
+  }
+}

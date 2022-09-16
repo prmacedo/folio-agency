@@ -1,0 +1,116 @@
+.cta {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 48px;
+
+  &__logo {
+    display: none;
+    @include breakpoint("tablet") {
+      display: block;
+    }
+  }
+
+  @include breakpoint("tablet") {
+    border-radius: 28px;
+    padding: 80px;
+
+    display: grid;
+    grid-template-columns: 28px 260px;
+    gap: 300px;
+
+    background-color: $primary;
+    background-image: url(../../imgs/phone-tablet.svg);
+    background-repeat: no-repeat;
+    background-position-x: 24px;
+    background-position-y: 80px;
+
+    &__banner {
+      position: relative;
+      padding: 0 32px;
+
+      @include breakpoint("big-tablet") {
+        padding: 0 100px;
+      }
+
+      &::before {
+        content: "";
+
+        background: url(../../imgs/polygon-blue.svg);
+        background-repeat: no-repeat;
+
+        height: 100%;
+        width: 365px;
+
+        position: absolute;
+        top: 24px;
+        left: 12px;
+        @include breakpoint("big-tablet") {
+          left: 50px;
+        }
+      }
+
+      &::after {
+        content: "";
+
+        background: url(../../imgs/polygon-pink.svg);
+        background-repeat: no-repeat;
+
+        height: 100%;
+        width: 365px;
+
+        position: absolute;
+        top: 24px;
+        right: 0;
+
+        z-index: 2;
+
+        @include breakpoint("big-tablet") {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+
+  &__container {
+    background-color: $primary;
+    margin: 0 32px;
+    border-radius: 28px;
+    padding-top: 64px;
+    padding-left: 40px;
+    height: 930px;
+    box-sizing: border-box;
+
+    @include breakpoint("tablet") {
+      background-color: transparent;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+
+      position: relative;
+      z-index: 3;
+    }
+
+    .summary__title {
+      @include breakpoint("fold") {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    z-index: 0;
+    top: 250px;
+    left: -88px;
+
+    &--tablet {
+      display: none;
+    }
+
+    @include breakpoint("tablet") {
+      &--mobile {
+        display: none;
+      }
+    }
+  }
+}

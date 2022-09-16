@@ -1,0 +1,131 @@
+.jobs {
+  background: $gradient-1;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: url(../../imgs/line-jobs.svg);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 162px;
+  }
+
+  &__card-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+
+    margin-top: 48px;
+    padding-bottom: 56px;
+
+    position: relative;
+    z-index: 1;
+  }
+
+  &__card-item {
+    background: $white;
+    border-radius: 24px;
+    margin: 0 32px;
+    padding: 45px 40px;
+    box-shadow: $box-shadow;
+
+    @include breakpoint("tablet") {
+      margin: 0;
+    }
+
+    &--highlight {
+      background-color: $dark;
+      margin-right: 0;
+      border-radius: 24px 0 0 24px;
+
+      display: grid;
+      grid-template-columns: 1fr 64px;
+      grid-template-rows: auto auto 1fr;
+      padding-bottom: 12px;
+      padding-top: 12px;
+
+      @include breakpoint("tablet") {
+        margin: 0;
+        border-radius: 24px;
+        grid-template-columns: 1fr auto;
+        padding-right: 12px;
+      }
+    }
+  }
+
+  &__card-title {
+    @include text-style("heading-6", $dark);
+
+    &--highlight {
+      color: $white;
+      margin-top: 33px;
+    }
+  }
+
+  &__card-description {
+    @include text-style("body-2", $text-light-mode);
+    margin-bottom: 10px;
+
+    &--highlight {
+      color: $text-dark-mode;
+    }
+  }
+
+  &__card-notification {
+    @include text-style("caption-1", $white);
+    background-image: $gradient-2;
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+  }
+
+  &__card-link {
+    text-decoration: none;
+  }
+
+  &__card-image {
+    grid-row: 1 / span 3;
+    grid-column: 2;
+    align-self: center;
+  }
+
+  &__image {
+    display: none;
+
+    @include breakpoint("tablet") {
+      display: block;
+    }
+  }
+
+  &__container--tablet {
+    @include breakpoint("tablet") {
+      display: grid;
+      grid-template-columns: auto 320px 1fr;
+      gap: 24px;
+      padding: 0 32px;
+      max-width: 840px;
+      margin: 0 auto;
+    }
+  }
+
+  &__available {
+    display: none;
+
+    @include breakpoint("tablet") {
+      display: flex;
+      align-items: center;
+      margin-top: 32px;
+
+      &-text {
+        @include text-style("tablet-menu", $text-dark-mode);
+        margin-left: 16px;
+        width: 80px;
+      }
+    }
+  }
+}

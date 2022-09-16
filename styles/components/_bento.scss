@@ -1,0 +1,46 @@
+.bento {
+  background-image: url(../../imgs/line-bento.svg);
+  background-repeat: no-repeat;
+  background-position-x: 176px;
+  overflow-x: hidden;
+
+  &__image {
+    position: relative;
+    top: 0;
+    left: 40px;
+
+    @include breakpoint("tablet") {
+      left: -32px;
+    }
+  }
+
+  &__featured {
+    color: $white;
+    font-weight: 600;
+    font-size: 0.625rem;
+    line-height: 0.8125rem;
+    margin-bottom: 16px;
+
+    display: inline-block;
+    background-color: $accent;
+    padding: 8px 16px;
+    border-radius: 14px;
+  }
+
+  &__info {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 6rem 6rem;
+    gap: 40px
+  }
+
+  &__description {
+    @include text-style("caption-2", $primary);
+    margin-top: 16px;
+  }
+
+  &__container--tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
