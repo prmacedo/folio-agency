@@ -1115,6 +1115,11 @@ body {
     z-index: 1;
   }
 }
+@media (min-width: 768px) and (min-width: 768px) {
+  .project__featured {
+    left: -236px;
+  }
+}
 
 .service {
   background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
@@ -1671,6 +1676,83 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .work__projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+  .work__projects .project__item:first-of-type {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .work__projects .project__item:first-of-type .project__info {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 48px;
+  }
+  .work__projects .project__item:first-of-type .project__image-container {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .work__projects .project__item:first-of-type .project__link {
+    top: 80px;
+    right: 20px;
+  }
+  .work__projects .project__item:not(.project__item:first-of-type) {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+  }
+  .work__projects .project__item:not(.project__item:first-of-type) .project__title {
+    grid-row: 1;
+    margin-bottom: 24px;
+  }
+  .work__projects .project__item:not(.project__item:first-of-type) .project__link {
+    top: 300px;
+  }
+  .work__projects .project__item:not(.project__item:first-of-type):nth-of-type(2n) {
+    margin-top: 200px;
+  }
+  .work__logo {
+    margin-right: 24px;
+  }
+  .work__container--tablet {
+    display: grid;
+    grid-template-columns: 24px 1fr 120px;
+    padding: 0 32px;
+  }
+  .work__container--tablet .work__button {
+    margin: 0;
+    padding: 0;
+    margin-top: 48px;
+  }
+  .work__container--tablet .work__button .button {
+    padding: 0.5rem 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .project__link--mobile {
+    display: none;
+  }
+}
+
+.project__link--tablet {
+  display: none;
+}
+@media (min-width: 768px) {
+  .project__link--tablet {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background-color: #5468E7;
+    border: none;
+  }
+}
+
 .container {
   padding: 0 32px;
 }
@@ -1728,6 +1810,14 @@ body {
   z-index: 1;
 }
 
+.d-block-tablet {
+  display: none;
+}
+@media (min-width: 768px) {
+  .d-block-tablet {
+    display: block;
+  }
+}
 @media (min-width: 768px) {
   .d-none-tablet {
     display: none;

@@ -78,6 +78,13 @@
 
 
 .d- {
+  &block-tablet {
+    display: none;
+    @include breakpoint("tablet") {
+      display: block;
+    }
+  }
+
   @include breakpoint("tablet") {
     &none-tablet {
       display: none;

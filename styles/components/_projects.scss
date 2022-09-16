@@ -151,6 +151,10 @@
       top: 24px;
       left: -24px;
       z-index: 1;
+
+      @include breakpoint("tablet") {
+        left:-236px;
+      }
     }
   }
 }
