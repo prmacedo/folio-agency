@@ -11,6 +11,10 @@
     align-items: center;
     justify-content: center;
     margin-top: 32px;
+
+    @include breakpoint("tablet") {
+      margin-top: 0;
+    }
   }
 
   &__item {
@@ -50,5 +54,38 @@
       border: 1px solid $primary;
       background-color: $primary;
     }
+
+    @include breakpoint("tablet") {
+      border: none;
+      background-color: transparent;
+    }
+  }
+
+  &__follow {
+    display: none;
+    @include text-style("caption-2", $primary);
+
+    @include breakpoint("tablet") {
+      margin-right: 24px;
+      display: block;
+    }
+  }
+
+  &__image{
+    &--tablet {
+      display: none;
+
+      @include breakpoint("tablet") {
+        display: block;
+      }
+    }
+
+    @include breakpoint("tablet") {
+      &--mobile {
+        display: none;
+      }
+    }
+
+
   }
 }

@@ -30,4 +30,8 @@
   &__icon {
     width: 0.625rem;
   }
+
+  @include breakpoint("tablet") {
+    display: none;
+  }
 }

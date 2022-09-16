@@ -7,9 +7,12 @@
   background-position-y: 530px;
   background-position-x: -114px;
 
+  @include breakpoint("tablet") {
+    padding-bottom: 0;
+  }
+
   &__card {
     padding-top: 50px;
-    padding-bottom: 32px;
     margin: 0 32px;
     border-radius: 24px;
     background-color: $primary;
@@ -18,8 +21,16 @@
     background-position-x: 56px;
     text-align: center;
 
+    @include breakpoint("tablet") {
+      background-image: url(../../imgs/line-footer-tablet.svg);
+    }
+
     &-container {
       padding: 0 24px;
+
+      @include breakpoint("tablet") {
+        display: none;
+      }
     }
   }
 
@@ -27,6 +38,10 @@
     position: relative;
     left: 20px;
     margin-bottom: 6px;
+
+    @include breakpoint("tablet") {
+      display: none;
+    }
   }
 
   &__greeting {
@@ -41,15 +56,29 @@
   }
 
   &__info {
-    @include text-style("menu-item", $white);
     padding: 40px;
     border-bottom: 1px solid rgba($color: $white, $alpha: 0.2);
+  }
+
+  &__content {
+    @include text-style("menu-item", $white);
+    @include breakpoint("tablet") {
+      width: 350px;
+      margin: 0 auto;
+    }
   }
 
   &__invite {
     @include text-style("heading-5", $white);
     margin: 40px 0;
     padding: 0 24px;
+
+    @include breakpoint("tablet") {
+      @include text-style("heading-3", $white);
+      text-align: left;
+      padding: 40px 30px 60px 40px;
+      margin: 0;
+    }
   }
 
   &__button {
@@ -75,11 +104,119 @@
     @include text-style("body-2", $text-deactive);
     margin-top: 32px;
     margin-bottom: 24px;
+
+    @include breakpoint("tablet") {
+      width: 400px;
+      margin: 32px auto 24px;
+    }
+
+    &--tablet {
+      display: none;
+      @include breakpoint("tablet") {
+        display: block;
+      }
+    }
+
+    &--mobile {
+      @include breakpoint("tablet") {
+        display: none;
+      }
+    }
   }
 
   &__copyright {
     @include text-style("caption-2", $text-deactive);
     margin-top: 32px;
     text-align: center;
+
+    @include breakpoint("tablet") {
+      margin-top: 0;
+    }
+  }
+
+  &__logo {
+    display: none;
+    @include breakpoint("tablet") {
+      display: block;
+      margin: 0 auto 40px;
+    }
+  }
+
+  &__left {
+    padding-bottom: 32px;
+  }
+
+  &__right {
+    display: none;
+
+    @include breakpoint("tablet") {
+      border-left: 1px solid rgba($color: $white, $alpha: 0.2);
+
+      display: grid;
+      grid-template-columns: 1fr auto;
+      column-gap: 20px;
+
+      padding: 40px 30px 60px 40px;
+
+      &-speech {
+        grid-column: span 2;
+      }
+
+      &-text {
+        @include text-style("heading-6", $white);
+        text-align: left;
+      }
+
+      &-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+        height: 44px;
+        width: 44px;
+        border: 2px solid $white;
+      }
+
+      &-image {
+        width: 20px;
+      }
+    }
+  }
+
+  &__list {
+    display: none;
+
+    @include breakpoint("tablet") {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @include breakpoint("tablet") {
+    &__bottom {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+    &__link {
+      @include text-style("tablet-menu", $text-dark-mode);
+      margin-right: 28px;
+      text-decoration: none;
+
+      &--active {
+        color: $primary;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+
+      border-top: 1px solid $stroke-1;
+      margin-top: 36px;
+    }
   }
 }
