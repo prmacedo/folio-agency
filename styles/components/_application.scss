@@ -1,0 +1,38 @@
+.application {
+  margin-top: 40px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+
+  &__title {
+    @include text-style("heading-6", $dark);
+  }
+
+  &__item {
+    background-color: $white;
+    border-radius: 32px;
+    box-shadow: $box-shadow;
+    padding: 56px 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &--disabled {
+      background-color: rgba($color: $stroke-1, $alpha: 0.3);
+      border: 1px solid $stroke-1;
+    }
+  }
+
+  &__name {
+    margin-top: 24px;
+    @include text-style("menu-item", $primary);
+  }
+
+  &__image {
+    height: 92px;
+    width: 92px;
+  }
+}

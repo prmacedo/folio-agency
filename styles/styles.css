@@ -687,6 +687,10 @@ body {
 
 .carousel {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .carousel__navigation {
   display: flex;
@@ -866,6 +870,59 @@ body {
   line-height: 1rem;
   color: #5468E7;
   margin-top: 16px;
+}
+
+.overview {
+  background-image: url(../../imgs/line-bento.svg);
+  background-repeat: no-repeat;
+  background-position-x: 176px;
+  overflow-x: hidden;
+}
+.overview__image {
+  position: relative;
+  top: 0;
+  left: 40px;
+}
+
+.application {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.application__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.0125rem;
+  color: #232340;
+}
+.application__item {
+  background-color: #FFFFFF;
+  border-radius: 32px;
+  box-shadow: -4px 16px 46px 5px #EDEDED;
+  padding: 56px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.application__item--disabled {
+  background-color: rgba(216, 216, 216, 0.3);
+  border: 1px solid #D8D8D8;
+}
+.application__name {
+  margin-top: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #5468E7;
+}
+.application__image {
+  height: 92px;
+  width: 92px;
 }
 
 .container {

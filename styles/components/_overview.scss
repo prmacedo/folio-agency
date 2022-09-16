@@ -1,0 +1,12 @@
+.overview {
+  background-image: url(../../imgs/line-bento.svg);
+  background-repeat: no-repeat;
+  background-position-x: 176px;
+  overflow-x: hidden;
+
+  &__image {
+    position: relative;
+    top: 0;
+    left: 40px;
+  }
+}
