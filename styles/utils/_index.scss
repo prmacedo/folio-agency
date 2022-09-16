@@ -10,7 +10,18 @@
   text-align: center;
 }
 
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
 .m {
+  &r- {
+    &32 {
+      margin-right: 32px;
+    }
+  }
+
   &b- {
     &8 {
       margin-bottom: 8px;
@@ -34,6 +45,10 @@
   }
 
   &t- {
+    &0 {
+      margin-top: 0;
+    }
+
     &36 {
       margin-top: 36px;
     }
@@ -45,6 +60,12 @@
     &56 {
       margin-top: 56px;
     }
+
+    @include breakpoint("tablet") {
+      &0--tablet {
+        margin-top: 0;
+      }
+    }
   }
 }
 
@@ -52,5 +73,34 @@
   &1 {
     position: relative;
     z-index: 1;
+  }
+}
+
+
+.d- {
+  &block-tablet {
+    display: none;
+    @include breakpoint("tablet") {
+      display: block;
+    }
+  }
+
+  @include breakpoint("tablet") {
+    &none-tablet {
+      display: none;
+    }
+
+    &flex-tablet {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &inline-flex-tablet {
+    display: none;
+    @include breakpoint("tablet") {
+      display: inline-flex;
+    }
   }
 }

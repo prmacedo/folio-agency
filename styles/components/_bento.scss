@@ -8,6 +8,10 @@
     position: relative;
     top: 0;
     left: 40px;
+
+    @include breakpoint("tablet") {
+      left: -32px;
+    }
   }
 
   &__featured {
@@ -33,5 +37,10 @@
   &__description {
     @include text-style("caption-2", $primary);
     margin-top: 16px;
+  }
+
+  &__container--tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }

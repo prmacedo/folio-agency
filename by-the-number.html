@@ -18,18 +18,27 @@
 <body>
   <section class="cs-about">
     <header class="header">
-      <a href="./" class="header__link">
-        <img src="./imgs/logo-dark-mode.svg" alt="Logo Folio Agency" class="header__logo">
+      <a href="./" class="header__logo">
+        <img src="./imgs/logo-dark-mode.svg" alt="Logo Folio Agency" class="header__image">
       </a>
+
+      <ul class="header__list">
+        <li class="header__item"><a href="./about.html" class="header__link header__link--dark-mode">About</a></li>
+        <li class="header__item"><a href="./work.html" class="header__link header__link--dark-mode">Work</a></li>
+        <li class="header__item"><a href="./services.html" class="header__link header__link--dark-mode">Services</a></li>
+        <li class="header__item"><a href="./cta.html" class="header__link header__link--dark-mode header__link--notification">Jobs</a></li>
+        <li class="header__item"><a href="#" class="header__link header__link--contact header__link--contact--dark-mode">Contact Us</a></li>
+      </ul>
+
       <button type="button" class="header__button js-toggle-menu-button">
-        <img src="./imgs/menu-white.svg" alt="Menu icon" class="header__icon header__icon--hamburger">
+        <img src="./imgs/menu.svg" alt="Menu icon" class="header__icon header__icon--hamburger">
       </button>
     </header>
 
     <nav class="menu js-menu">
       <header class="header">
-        <a href="./" class="header__link">
-          <img src="./imgs/logo-dark-mode.svg" alt="Logo Folio Agency Dark Mode" class="header__logo">
+        <a href="./" class="header__logo">
+          <img src="./imgs/logo-dark-mode.svg" alt="Logo Folio Agency Dark Mode" class="header__image">
         </a>
         <button type="button" class="header__button js-toggle-menu-button">
           <img src="./imgs/close.svg" alt="Close menu" class="header__icon header__icon--close">
@@ -62,35 +71,38 @@
       </ul>
     </nav>
 
-    <div class="container">
-      <div class="summary__tag">
-        <span class="summary__tag-number summary__tag-number--dark-mode">02.</span>
-        <span class="summary__tag-text summary__tag-text--dark-mode">Bento 3D Kit</span>
-      </div>
-
-      <div class="summary__title summary__title--dark-mode mb-40">By the Numbers.</div>
-    </div>
-
-    <section class="numbers container mb-40">
-      <div class="numbers_item">
-        <p class="numbers__number numbers__number--plus">40</p>
-        <p class="numbers__title">Scene Objects</p>
-        <p class="numbers__description">Bento is the first fully editable, 3D visual design system with global auto-updatable style guides built right in Figma.</p>
-
-        <div class="download">
-          <img src="./imgs/download.svg" alt="Download" class="download__image">
-          <p class="download__text">Download</p>
+    <section class="cs-about__container">
+      <img src="./imgs/logo-primary.svg" alt="Logo" class="cs-about__logo">
+      <div class="container">
+        <div class="summary__tag">
+          <span class="summary__tag-number summary__tag-number--dark-mode">02.</span>
+          <span class="summary__tag-text summary__tag-text--dark-mode">Bento 3D Kit</span>
         </div>
+
+        <div class="summary__title summary__title--dark-mode mb-40">By the Numbers.</div>
       </div>
 
-      <div class="numbers_item">
-        <p class="numbers__number">20</p>
-        <p class="numbers__title">
-          Pre-build Scenes
-          <img src="./imgs/fire.svg" alt="Fire" class="numbers__icon">
-        </p>
-        <p class="numbers__description">Bento is the first fully editable, 3D visual design system with global auto-updatable style guides built right in Figma.</p>
-      </div>
+      <section class="numbers container mb-40">
+        <div class="numbers__item">
+          <p class="numbers__number numbers__number--plus">40</p>
+          <p class="numbers__title">Scene Objects</p>
+          <p class="numbers__description">Bento is the first fully editable, 3D visual design system with global auto-updatable style guides built right in Figma.</p>
+
+          <div class="download">
+            <img src="./imgs/download.svg" alt="Download" class="download__image">
+            <p class="download__text">Download</p>
+          </div>
+        </div>
+
+        <div class="numbers__item">
+          <p class="numbers__number">20</p>
+          <p class="numbers__title">
+            Pre-build Scenes
+            <img src="./imgs/fire.svg" alt="Fire" class="numbers__icon">
+          </p>
+          <p class="numbers__description">Bento is the first fully editable, 3D visual design system with global auto-updatable style guides built right in Figma.</p>
+        </div>
+      </section>
     </section>
 
     <div class="navigation container">
@@ -108,20 +120,21 @@
     </div>
   </section>
 
-  <div class="container--small">
-    <div class="summary__tag">
-      <span class="summary__tag-number">03.</span>
-      <span class="summary__tag-text">Visual Identity</span>
-    </div>
+  <section class="cs-about__visual-container">
+    <img src="./imgs/logo-primary.svg" alt="Logo" class="cs-about__logo">
 
-    <div class="summary__title">Evolving the look & feel.</div>
-    <div class="summary__text">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</div>
-  </div>
-
-  <section class="visual-id">
     <div class="container--small">
-      <p class="visual-id__number">80</p>
-      <p class="visual-id__text">UI Elements</p>
+      <div class="summary__tag">
+        <span class="summary__tag-number">03.</span>
+        <span class="summary__tag-text">Visual Identity</span>
+      </div>
+
+      <div class="summary__title">Evolving the look & feel.</div>
+      <div class="summary__text">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</div>
+      <div class="visual-id__header">
+        <p class="visual-id__number">80</p>
+        <p class="visual-id__text">UI Elements</p>
+      </div>
     </div>
 
     <div class="visual-id__card">
@@ -156,51 +169,81 @@
   <footer class="footer">
     <div class="footer__card">
       <img src="./imgs/speech-bubble.svg" alt="Speech baloon" class="footer__speech">
+      <img src="./imgs/logo-purple.svg" alt="Logo Folio Agency" class="footer__logo">
 
       <p class="footer__greeting">
         <img src="./imgs/wave-hand.svg" alt="Say hello" class="footer__greeting-img">
         <span class="footer__greeting-text">Say hello</span>
       </p>
 
-      <p class="footer__info">A design team building a curated marketplace for UI designers.</p>
+      <div class="footer__info">
+        <p class="footer__content">
+          A design team building a curated marketplace for UI designers.
+        </p>
+      </div>
 
-      <h2 class="footer__invite">Let’s talk about your next project</h2>
+      <div class="footer__bottom">
+        <div class="footer__left">
+          <h2 class="footer__invite">Let’s talk about your next project</h2>
 
-      <div class="footer__card-container">
-        <a href="#" class="footer__button">Contact Us</a>
+          <div class="footer__card-container">
+            <a href="#" class="footer__button">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer__right">
+          <img src="./imgs/speech-bubble.svg" alt="Speech baloon" class="footer__right-speech">
+          <p class="footer__right-text">Invest in your designs today!</p>
+          <div class="footer__right-arrow">
+            <img src="./imgs/arrow.svg" alt="Arrow" class="footer__right-image">
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="footer__container">
       <img src="./imgs/logo-light-mode.svg" alt="Logo Folio Agency" class="footer__image">
 
-      <p class="footer__text">Agency is a full-service agency, busy designing and building.</p>
+      <p class="footer__text footer__text--mobile">Agency is a full-service agency, busy designing and building.</p>
+      <p class="footer__text footer__text--tablet">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
 
       <div class="select">
-        <span class="select__label">About</span>
+        <span class="select__label">Jobs</span>
         <img src="./imgs/dropdown-dark.svg" alt="Dropdown" class="select__icon">
       </div>
 
-      <ul class="social-media social-media--footer">
-        <li class="social-media__item social-media__item--footer social-media--facebook">
-          <a href="https://pt-br.facebook.com/" class="social-media__link social-media__link--primary">
-            <img src="./imgs/facebook.svg" alt="Facebook" class="social-media__image">
-          </a>
-        </li>
-        <li class="social-media__item social-media__item--footer social-media--youtube">
-          <a href="https://www.youtube.com/" class="social-media__link">
-            <img src="./imgs/youtube.svg" alt="Youtube" class="social-media__image">
-          </a>
-        </li>
-        <li class="social-media__item social-media__item--footer social-media--instagram">
-          <a href="https://www.instagram.com/" class="social-media__link">
-            <img src="./imgs/instagram.svg" alt="Instagram" class="social-media__image">
-          </a>
-        </li>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="./about.html" class="footer__link">About</a></li>
+        <li class="footer__item"><a href="./work.html" class="footer__link">Work</a></li>
+        <li class="footer__item"><a href="./services.html" class="footer__link">Services</a></li>
+        <li class="footer__item"><a href="./cta.html" class="footer__link">Jobs</a></li>
+        <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
       </ul>
-    </div>
 
-    <p class="footer__copyright">© 2020, UI8 LLC.</p>
+      <div class="footer__footer">
+        <ul class="social-media social-media--footer">
+          <p class="social-media__follow">Follow Us</p>
+          <li class="social-media__item social-media__item--footer social-media--facebook">
+            <a href="https://pt-br.facebook.com/" class="social-media__link social-media__link--primary">
+              <img src="./imgs/facebook.svg" alt="Facebook" class="social-media__image social-media__image--mobile">
+              <img src="./imgs/logo-facebook.svg" alt="Facebook" class="social-media__image social-media__image--tablet">
+            </a>
+          </li>
+          <li class="social-media__item social-media__item--footer social-media--youtube">
+            <a href="https://www.youtube.com/" class="social-media__link">
+              <img src="./imgs/youtube.svg" alt="Youtube" class="social-media__image">
+            </a>
+          </li>
+          <li class="social-media__item social-media__item--footer social-media--instagram">
+            <a href="https://www.instagram.com/" class="social-media__link">
+              <img src="./imgs/instagram.svg" alt="Instagram" class="social-media__image">
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer__copyright">© 2020, UI8 LLC.</p>
+      </div>
+    </div>
   </footer>
 
   <script src="./js/index.js"></script>

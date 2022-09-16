@@ -16,6 +16,46 @@
     width: 100%;
     height: 600px;
     position: absolute;
+    @include breakpoint("tablet") {
+      background-position-x: center;
+    }
   }
 
+  &__logo {
+    display: none;
+    @include breakpoint("tablet") {
+      display: block;
+      grid-row: 1 / span 2;
+    }
+  }
+
+  &__container {
+    @include breakpoint("tablet") {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      padding: 0 32px;
+
+      .numbers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .numbers__item:first-child {
+          grid-row: 1;
+          grid-column: 2;
+        }
+        .numbers__item:last-child {
+          grid-row: 1;
+          grid-column: 1;
+          margin-top: 100px;
+        }
+      }
+    }
+  }
+}
+
+.cs-about__visual-container {
+  @include breakpoint("tablet") {
+    display: grid;
+    grid-template-columns: 24px 1fr 1fr;
+    padding: 0 32px;
+  }
 }

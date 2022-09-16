@@ -33,4 +33,8 @@
       color: $white;
     }
   }
+
+  @include breakpoint("tablet") {
+    display: none;
+  }
 }

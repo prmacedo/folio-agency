@@ -1,0 +1,83 @@
+.timeline {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 64px;
+  padding: 0 32px;
+
+  @include breakpoint("big-tablet") {
+    padding: 0 80px;
+  }
+
+  &__years {
+    display: none;
+
+    @include breakpoint("tablet") {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 72px;
+    }
+  }
+
+  &__image {
+    position: relative;
+    top: 0;
+    left: -115px;
+    height: 424px;
+    margin: 56px 0;
+
+    @include breakpoint("tablet") {
+      position: initial;
+      margin: 0;
+
+      &--mobile {
+        display: none;
+      }
+    }
+
+    &--tablet {
+      display: none;
+      @include breakpoint("tablet") {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  &__item {
+    @include breakpoint("tablet") {
+      @include text-style("caption-2", $text-deactive);
+      &--active{
+        position: relative;
+        &::before {
+          content: "";
+
+          position: absolute;
+          top: 25%;
+          left: -24px;
+
+          width: 18px;
+          height: 2px;
+          border-radius: 1px;
+
+          background-color: $white;
+
+          @include breakpoint("big-tablet") {
+            left: -48px;
+          }
+        }
+
+        &::after {
+          content: url(../../imgs/point-line.svg);
+
+          position: absolute;
+          top: 10%;
+          right: -24px;
+
+          width: 16px;
+          height: 2px;
+          border-radius: 1px;
+        }
+      }
+    }
+  }
+}
