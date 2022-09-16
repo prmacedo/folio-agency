@@ -3,6 +3,13 @@
   position: relative;
   padding-bottom: 48px;
 
+  &__logo {
+    display: none;
+    @include breakpoint("tablet") {
+      display: block;
+    }
+  }
+
   @include breakpoint("tablet") {
     border-radius: 28px;
     padding: 80px;
@@ -81,6 +88,12 @@
 
       position: relative;
       z-index: 3;
+    }
+
+    .summary__title {
+      @include breakpoint("fold") {
+        font-size: 2rem;
+      }
     }
   }
 

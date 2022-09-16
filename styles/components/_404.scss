@@ -1,0 +1,22 @@
+.e404 {
+  background-image: url(../../imgs/line.svg);
+  background-repeat: no-repeat;
+  background-position-x: 176px;
+
+  &__content {
+    padding: 40px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    @include text-style("number", $dark);
+  }
+
+  &__text {
+    @include text-style("display-2", $dark);
+  }
+}
